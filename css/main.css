@@ -275,6 +275,10 @@ ul {
 }
 
 
+.form-control:focus {
+  box-shadow: 0 0 5px rgb(3, 21, 100);
+}
+
 .colored-letter {
   color: var(--accent);
   font-size: 2em;
