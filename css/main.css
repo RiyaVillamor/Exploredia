@@ -323,12 +323,14 @@ ul {
   justify-content: center;
   align-items: center;
   margin-top: 4rem;
+  margin-left: 12.4%;
 }
 
 .search-form input {
   width: 100%;
   max-width: 25rem; 
   margin-right: 0.5rem;
+  width:40vw;
 }
 
 .search-form button {
@@ -351,8 +353,29 @@ ul {
   }
 
   .search-form {
-    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-right: 13%;
   }
+  
+  .search-form input {
+    width: 100%;
+    max-width: 25rem; 
+    margin-right: 0.5rem;
+  }
+
+  .offcanvas{
+    background:var(--white);
+    background:rgba(250, 248, 248, 0.979);
+    backdrop-filter: blur(30%);
+  }
+
+  .dropdown-item{
+    font-size: 13px;
+  }
+  
 }
 
 
