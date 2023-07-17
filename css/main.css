@@ -378,4 +378,14 @@ ul {
   
 }
 
+.hov-translate:hover {
+  color: var(--white);
+  background-color: var(--primary-500);
+  border-color: var(--primary-500);
+}
 
+.hov-convert:hover {
+  color: var(--white);
+  background-color: var(--primary-500);
+  border-color: var(--primary-500);
+}
