@@ -1,154 +1,183 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Exploredia</title>
-            <!-- favicon -->
-            <link rel="shortcut icon" href="./assets/favicon-exploredia.png" type="image/x-icon" />
-            <!-- normalize -->
-            <link rel="stylesheet" href="./css/normalize.css" />
-            <!-- bootstrap -->
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-                integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-            <!-- font-awesome -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-            <!-- main css -->
-            <link rel="stylesheet" href="./css/main.css" />
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exploredia</title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./assets/favicon-exploredia.png" type="image/x-icon" />
+        <!-- normalize -->
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+        <!-- main css -->
+        <link rel="stylesheet" href="./css/main.css" />
 
 
-        </head>
+    </head>
 
-        <body>
-            <!-- start of navbar -->
-            <nav class="navbar bg-body-tertiary fixed-top">
-                <div class="container-fluid">
-                    <div>
-                        <img class="logo-mv" src="assets/favicon-exploredia.png" alt="favicon-exploredia" width="70px">
-                        <span class="colored-letter fw-bold mb-2">E</span><span class="colored-word fw-bold">xploredia</span>
-                    </div>
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary me-5">
-                        <div class="container-fluid">
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <div class="navbar-nav">
-                                    <a class="nav-link active ms-5 fw-bold" aria-current="page" href="index.html">HOME</a>
-                                    <a class="nav-link ms-5 fw-bold" href="translate.html">TRANSLATE</a>
-                                    <a class="nav-link ms-5 fw-bold" href="convert.html">CONVERT</a>
-                                    <a class="nav-link ms-5 fw-bold" href="countries.html">COUNTRIES</a>
-                                </div>
+    <body>
+        <!-- start of navbar -->
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <div>
+                    <img class="logo-mv" src="assets/favicon-exploredia.png" alt="favicon-exploredia" width="70px">
+                    <span class="colored-letter fw-bold mb-2">E</span><span class="colored-word fw-bold">xploredia</span>
+                </div>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary me-5">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active ms-5 fw-bold" aria-current="page" href="index.html">HOME</a>
+                                <a class="nav-link ms-5 fw-bold" href="translate.html">TRANSLATE</a>
+                                <a class="nav-link ms-5 fw-bold" href="convert.html">CONVERT</a>
+                                <a class="nav-link ms-5 fw-bold" href="countries.html">COUNTRIES</a>
                             </div>
                         </div>
-                    </nav>
-                    <div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                            aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="colored-letter fw-bold"
-                                        id="colored-brand">E</span><span class="colored-word fw-bold"
-                                        id="colored-brand-2">xploredia</span>
-                                </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                        <a class="nav-link active fw-semibold" aria-current="page" href="#">HOME</a>
-                                    </li>
-                                    <li class="nav-item fw-semibold mt-3">
-                                        <a class="nav-link" href="countries.html">COUNTRIES</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link fw-semibold mt-3" href="about.html">ABOUT</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link fw-semibold mt-3" href="contact-us.html">CONTACT US</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            OTHER FEATURES
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item hov-translate" href="translate.html">TRANSLATE</a></li>
-                                            <hr class="dropdown-divider">
-                                            <li><a class="dropdown-item hov-convert" href="convert.html">CONVERT</a></li>
-                                            <!-- <li>
-                                    <hr class="dropdown-divider">
+                    </div>
+                </nav>
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="colored-letter fw-bold"
+                                id="colored-brand">E</span><span class="colored-word fw-bold"
+                                id="colored-brand-2">xploredia</span>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active fw-semibold" aria-current="page" href="#">HOME</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
+                                <li class="nav-item fw-semibold mt-3">
+                                    <a class="nav-link" href="countries.html">COUNTRIES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold mt-3" href="about.html">ABOUT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold mt-3" href="contact-us.html">CONTACT US</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        OTHER FEATURES
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item hov-translate" href="translate.html">TRANSLATE</a></li>
+                                        <hr class="dropdown-divider">
+                                        <li><a class="dropdown-item hov-convert" href="convert.html">CONVERT</a></li>
+                                        <!-- <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </nav>
-            <!-- end of navbar -->
+            </div>
+        </nav>
+        <!-- end of navbar -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+       <section class="sec">
+            <div class="heading">
+                <h1>About Us</h1>
+            </div>
+            <br>
+            <div class="container">
+                <div class="sec-content">
+                    <p>Exploredia is a comprehensive country and travel guide <br> that allows you to choose any country worldwide and provides <br/> key information, including flags, capitals, currencies, and population. <br> Our platform also offers a language translation function similar <br/>to Google Translate, along with a currency converter, recommended routes,<br> and essential tips for tourists. With Exploredia, you can <br/> effortlessly explore countries and access all the necessary travel <br> information in one place. We ensure that you're well-prepared <br/> for your trip by providing essential tips on local customs, etiquette, <br> and must-visit attractions.</p>
+                    <button class="btn btn-danger mt-4">Contact Us</button>
+                </div>
+                <div class="sec-image">
+                    <img src="assets/about photo.jpg" alt="travelers photo" width="320px">
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-evenly mt-5">
+                    <div class="col-sm-3 mb-4 mb-sm-0">
+                      <div class="card">
+                        <h5 class="card-title text-center mt-3">Mission</h5>
+                        <p class="card-text text-center  mb-3">Our mission at RestCountries is to provide an accessible and comprehensive platform that empowers individuals to explore and understand the diverse countries of the world. We are committed to delivering accurate, up-to-date, and reliable information, enabling users to broaden their knowledge, embrace cultural diversity, and foster global awareness. By offering a user-friendly interface and a wealth of information, we strive to be the go-to resource for individuals seeking to expand their understanding of different nations.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 ">
+                      <div class="card">
+                        <h5 class="card-title text-center mt-3">Vision</h5>
+                        <p class="card-text text-center mb-3">Our vision is to be the leading online destination for country-related information, serving as a bridge that connects people from different backgrounds and cultures. We strive to create an inclusive and immersive experience that encourages curiosity, understanding, and appreciation for the rich tapestry of our global community. Through RestCountries, we aim to inspire and empower individuals to become informed global citizens, promoting unity and harmony in an increasingly interconnected world.</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+       </section>
+        
 
 
-      <!-- <div class="bg-image mt-5" style="background-image: url('');"> -->
-      <div class="container-fluid mt-5">
-        <div class="row d-flex justify-content-evenly mt-5 ms-2 me-2">
-          <div class="card border-primary mt-5" style="max-width: 30rem;">
-            <div class="card-header text-center">Mission</div>
-            <div class="card-body text-primary">
-              <p class="card-text text-center">Our mission at Exploredia is to provide an accessible and comprehensive platform that empowers individuals to explore and understand the diverse countries of the world. We are committed to delivering accurate, up-to-date, and reliable information, enabling users to broaden their knowledge, embrace cultural diversity, and foster global awareness.</p>
-            </div>
-          </div>
-          <div class="card border-secondary mt-5" style="max-width: 30rem;">
-            <div class="card-header text-center">Vission</div>
-            <div class="card-body text-secondary">
-              <p class="card-text text-center">Our vision is to be the leading online destination for country-related information, serving as a bridge that connects people from different backgrounds and cultures. We strive to create an inclusive and immersive experience that encourages curiosity, understanding, and appreciation for the rich tapestry of our global community. Through RestCountries, we aim to inspire and empower individuals to become informed global citizens, promoting unity and harmony in an increasingly interconnected world.</p>
-            </div>
-          </div>
-        </div>
-        <hr class="border border-danger border-3 opacity-75">
-        <div class="container-fluid me-5 about-card">
-          <div class="row d-flex justify-content-evenly mt-5 ms-3">
-            <div class="card border-primary mb-3 rounded-4" style="max-width: 25rem;">
-              <div class="card-body text-primary">
-                <p class="card-text text-center">Exploredia is a country and travel guide lets you choose any country and provides key information like flags, capitals, currencies, and population. It offers a language translation function, currency converter, recommended routes, and essential tips for tourists. Explore countries worldwide with ease and access comprehensive travel information in one place. our platform provides essential tips for tourists, ensuring you're well-prepared with information on local customs, etiquette, and must-visit attractions.</p>
-              </div>
-            </div>
-            <div class="card border-secondary mb-3 rounded-4" style="max-width: 25rem;">
-              <div class="card-body text-secondary">
-                <p class="card-text text-center">A country and travel guide is available where you can choose any country in the world. It provides information such as flags, capitals, currencies, and population of the selected country. Additionally, if you select a language, it will direct you to a language translation function similar to Google Translate. This feature allows you, as a tourist visiting that particular country, to easily type what you need in your language, and it will translate it to the specific language you chose.</p>
-              </div>
-            </div>
-            <div class="card border-success mb-3 rounded-4" style="max-width: 25rem;">
-              <div class="card-body text-success">
-                <p class="card-text text-center">Moreover, by clicking on the "currencies" section, you will be directed to a currency converter. This enables you to compare prices and determine if you are getting better deals when purchasing items or dealing with the locals in that country. Furthermore, the guide suggests specific routes (labeled A to D) to visit in a given country. These routes highlight nearby attractions that are worth exploring together. </p>
-              </div>
-            </div>
-            <div class="card border-danger mb-3 rounded-4" style="max-width: 25rem;">
-              <div class="card-body text-danger">
-                <p class="card-text text-center">Additionally, our comprehensive country guides go beyond just providing information about countries. They also serve as essential resources for travelers, offering valuable insights and tips to ensure a safe and memorable experience. Whether you're planning a vacation, a business trip, or a cultural exchange, our guides equip you with the knowledge and awareness necessary to navigate the customs, norms, and expectations of each country. </p>
-              </div>
-            </div>
-            <div class="card border-warning mb-3 rounded-4" style="max-width: 25rem;">
-              <div class="card-body d-flex align-content-center">
-                <p class="card-text text-center align-content-center">
-                  To summarize, Exploredia is your ultimate destination for comprehensive information about countries worldwide. Our platform goes beyond just providing country-specific facts; it offers a wide range of features to enhance your travel experience. From language translation tools that help you communicate effectively with locals to currency conversion calculators that ensure you stay on top of your finances, we have you covered. Exploredia takes it a step further by offering recommended routes and itineraries.</p>
-              </div>
-            <div>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
-            <!-- start of footer -->
-            <!-- end of footer -->
-            <script src="./js/app.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-                crossorigin="anonymous"></script>
-        </body>
+        <!-- <section>
+            <div class="container-fluid d-flex justify-content-between">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-9 col-md-9 col-sm-8"> 
+                        <div class="card-body">
+                            <h6 class="ms-3 me-3">About us</h6>
+                            <br>
+                            <p class="card-text text-center ms-3 me-3">Exploredia is a comprehensive country and travel guide that allows you to choose any country worldwide and provides key information, including flags, capitals, currencies, and population. Our platform also offers a language translation function similar to Google Translate, along with a currency converter, recommended routes, and essential tips for tourists. With Exploredia, you can effortlessly explore countries and access all the necessary travel information in one place. We ensure that you're well-prepared for your trip by providing essential tips on local customs, etiquette, and must-visit attractions.</p>
+                            <a href="#" class="btn btn-primary ms-3 me-3-">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-2  ms-3">
+                        <div class="card-body ms-3">
+                            <img src="assets/about photo.jpg" alt="" width="250px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-evenly mt-5">
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                  <div class="card">
+                    <h5 class="card-title text-center mt-3">Mission</h5>
+                    <p class="card-text text-center mt-4 mb-4">Our mission at RestCountries is to provide an accessible and comprehensive platform that empowers individuals to explore and understand the diverse countries of the world. We are committed to delivering accurate, up-to-date, and reliable information, enabling users to broaden their knowledge, embrace cultural diversity, and foster global awareness.</p>
+                  </div>
+                </div>
+                <div class="col-sm-4 ">
+                  <div class="card">
+                    <h5 class="card-title text-center mt-3">Vision</h5>
+                    <p class="card-text text-center mb-3">Our vision is to be the leading online destination for country-related information, serving as a bridge that connects people from different backgrounds and cultures. We strive to create an inclusive and immersive experience that encourages curiosity, understanding, and appreciation for the rich tapestry of our global community. Through RestCountries, we aim to inspire and empower individuals to become informed global citizens, promoting unity and harmony in an increasingly interconnected world.</p>
+                  </div>
+                </div>
+              </div> -->
+
+            
+
+
+        <!-- start of footer -->
+        <!-- end of footer -->
+        <script src="./js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    </body>
 
 </html>

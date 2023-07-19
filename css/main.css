@@ -391,48 +391,126 @@ ul {
   color: var(--white);
   background-color: var(--primary-500);
   border-color: var(--primary-500);
+  
 }
 
 
 /* about-us */
 
-/* about-us */
-
-/* countries-section */
-.table-bordered {
-  border: 1px solid var(--primary-500);
+.sec{
+  background-color: var(--backgroundColor);
+  overflow: hidden;
 }
 
-.table-bordered th,
-.table-bordered td {
-  border: 1px solid var(--black);
-}
-
-.table td {
+.heading h1{
+  color: var(--primary-300);
+  font-size: 24px;
   text-align: center;
+  margin-top: 35px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 50px auto;
+  margin-left: 90px;
+}
+
+.sec-cotent{
+  flex: 1;
+  width: 600px;
+  margin-bottom: 0px 25px;
+
 }
 
 
-.accordion-button:focus {
-  color: var(--white);
-  background-color: var(--primary-500)
+.sec-cotent p{
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: var(--primary-300);
 }
 
-.accordion-button:active {
-  color: var(--primary-500);
+.sec-cotent button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  cursor:pointer;
+  transition:  0.3s ease;
 }
 
-/* countries-section */
-
-footer {
-  background-color: var(--primary-500);
-  color: var(--white);
+.sec-cotent button:hover{
+  background-color: var(--accent);
+  transform: scale(1.1);
 }
 
-.copy {
-  background-color: var(--primary-600);
+
+.sec-image{
+  flex: 1;
+  width: 200px;
+  margin-left: 85px;
 }
 
-.hr-foot {
-  width: 60px; 
-  height: 2px}
+.sec-image .img{
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .heading h1{
+    font-size: 45px;
+    margin-top: 30px;
+  }
+
+  .sec{
+    margin: 0px;
+  }
+
+  .container{
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+    padding:0px 40px;
+  }
+
+  .sec-content{
+    width:100%;
+    margin:35px 0px;
+  }
+
+  .sec-centent p{
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .sec-centent button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .sec-image{
+    width: 100%;
+    margin-right: 100px;
+  }
+
+
+
+}
+
+/* about-us */
+
+
+/* about-us */
+
+
+
+/* countries */
+
+.countries-continent, .accordion-container {
+  width: 100%; /* Set the width to 100% */
+}
