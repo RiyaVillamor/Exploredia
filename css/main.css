@@ -458,3 +458,34 @@ ul {
 .hr-foot {
   width: 60px; 
   height: 2px}
+
+
+/* countries-section */
+.table-bordered {
+  border: 1px solid var(--primary-500);
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid var(--black);
+}
+
+.table td {
+  text-align: center;
+}
+
+
+.accordion-button:focus {
+  color: var(--white);
+  background-color: var(--primary-500)
+}
+
+.accordion-button:active {
+  color: var(--primary-500);
+}
+
+/* countries-section */
+
+footer {
+  background-color: var(--primary-500);
+  color: var(--white);
