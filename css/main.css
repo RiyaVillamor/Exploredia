@@ -257,6 +257,10 @@ ul {
   margin-top: 1rem;
 }
 
+
+.navbar {
+  background-color: var(--white);
+}
  
 .navbar-toggler {
   padding: 0.25rem 0.5rem;
@@ -271,7 +275,6 @@ ul {
   height: 1.5em;
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
 
 
 .btn-danger {
@@ -394,120 +397,43 @@ ul {
 
 /* about-us */
 
-.sec{
-  background-color: var(--backgroundColor);
-  overflow: hidden;
+/* about-us */
+
+/* countries-section */
+.table-bordered {
+  border: 1px solid var(--primary-500);
 }
 
-.heading h1{
-  color: var(--primary-300);
-  font-size: 24px;
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid var(--black);
+}
+
+.table td {
   text-align: center;
-  margin-top: 35px;
-}
-
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  margin: 50px auto;
-  margin-left: 90px;
-}
-
-.sec-cotent{
-  flex: 1;
-  width: 600px;
-  margin-bottom: 0px 25px;
-
 }
 
 
-.sec-cotent p{
-  font-size: 24px;
-  line-height: 1.5;
-  margin-bottom: 40px;
-  color: var(--primary-300);
+.accordion-button:focus {
+  color: var(--white);
+  background-color: var(--primary-500)
 }
 
-.sec-cotent button {
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 5px;
-  font-size: 20px;
-  border: none;
-  cursor:pointer;
-  transition:  0.3s ease;
+.accordion-button:active {
+  color: var(--primary-500);
 }
 
-.sec-cotent button:hover{
-  background-color: var(--accent);
-  transform: scale(1.1);
+/* countries-section */
+
+footer {
+  background-color: var(--primary-500);
+  color: var(--white);
 }
 
-
-.sec-image{
-  flex: 1;
-  width: 200px;
-  margin-left: 85px;
+.copy {
+  background-color: var(--primary-600);
 }
 
-.sec-image .img{
-  width: 50%;
-  height: auto;
-  border-radius: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  .heading h1{
-    font-size: 45px;
-    margin-top: 30px;
-  }
-
-  .sec{
-    margin: 0px;
-  }
-
-  .container{
-    width: 100%;
-    flex-direction: column;
-    margin: 0px;
-    padding:0px 40px;
-  }
-
-  .sec-content{
-    width:100%;
-    margin:35px 0px;
-  }
-
-  .sec-centent p{
-    font-size: 16px;
-    margin-top: 15px;
-  }
-
-  .sec-centent button {
-    font-size: 16px;
-    padding: 8px 16px;
-  }
-
-  .sec-image{
-    width: 100%;
-    margin-right: 100px;
-  }
-
-
-
-}
-
-/* about-us */
-
-
-/* about-us */
-
-
-
-/* countries */
-
-.countries-continent, .accordion-container {
-  width: 100%; /* Set the width to 100% */
-}
+.hr-foot {
+  width: 60px; 
+  height: 2px}
