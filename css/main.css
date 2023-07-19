@@ -394,3 +394,16 @@ ul {
 /* about-us */
 
 /* about-us */
+
+footer {
+  background-color: var(--primary-500);
+  color: var(--white);
+}
+
+.copy {
+  background-color: var(--primary-600);
+}
+
+.hr-foot {
+  width: 60px; 
+  height: 2px}
