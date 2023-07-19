@@ -391,46 +391,68 @@ ul {
   color: var(--white);
   background-color: var(--primary-500);
   border-color: var(--primary-500);
+  
 }
 
 
 /* about-us */
 
-/* about-us */
-
-/* countries-section */
-.table-bordered {
-  border: 1px solid var(--primary-500);
+.sec{
+  background-color: var(--backgroundColor);
+  overflow: hidden;
 }
 
-.table-bordered th,
-.table-bordered td {
-  border: 1px solid var(--black);
-}
-
-.table td {
+.heading h1{
+  color: var(--primary-300);
+  font-size: 24px;
   text-align: center;
+  margin-top: 35px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 50px auto;
+  margin-left: 90px;
+}
+
+.sec-cotent{
+  flex: 1;
+  width: 600px;
+  margin-bottom: 0px 25px;
+
 }
 
 
-.accordion-button:focus {
-  color: var(--white);
-  background-color: var(--primary-500)
+.sec-cotent p{
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: var(--primary-300);
 }
 
-.accordion-button:active {
-  color: var(--primary-500);
+.sec-cotent button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  cursor:pointer;
+  transition:  0.3s ease;
 }
 
-/* countries-section */
-
-footer {
-  background-color: var(--primary-500);
-  color: var(--white);
+.sec-cotent button:hover{
+  background-color: var(--accent);
+  transform: scale(1.1);
 }
 
-.copy {
-  background-color: var(--primary-600);
+
+.sec-image{
+  flex: 1;
+  width: 200px;
+  margin-left: 85px;
 }
 
 .hr-foot {
