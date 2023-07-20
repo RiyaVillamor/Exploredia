@@ -245,7 +245,7 @@ ul {
 
 /* title */
 
-.title {
+ .title {
   text-align: center;
 }
 
@@ -255,10 +255,10 @@ ul {
   height: 0.25rem;
   margin: 0 auto;
   margin-top: 1rem;
-}
+} 
 
 
-.navbar {
+ .navbar {
   background-color: var(--white);
 }
  
@@ -277,7 +277,7 @@ ul {
 }
 
 
-.btn-danger {
+ .btn-danger {
   color: var(--white);
   background-color: var(--primary-500);
   border-color: var(--primary-500);
@@ -392,12 +392,12 @@ ul {
   background-color: var(--primary-500);
   border-color: var(--primary-500);
   
-}
+} */
 
 
 /* about-us */
 
-.sec{
+ .sec{
   background-color: var(--backgroundColor);
   overflow: hidden;
 }
@@ -409,14 +409,15 @@ ul {
   margin-top: 35px;
 }
 
-.container{
+/* .container{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 90%;
   margin: 50px auto;
   margin-left: 90px;
-}
+} */
+
 
 .sec-cotent{
   flex: 1;
@@ -457,4 +458,35 @@ ul {
 
 .hr-foot {
   width: 60px; 
-  height: 2px}
+  height: 2px} */
+
+
+/* countries-section */
+.table-bordered {
+  border: 1px solid var(--primary-500);
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid var(--black);
+}
+
+.table td {
+  text-align: center;
+}
+
+
+.accordion-button:focus {
+  color: var(--white);
+  background-color: var(--primary-500)
+}
+
+.accordion-button:active {
+  color: var(--primary-500);
+}
+
+/* countries-section */
+
+footer {
+  background-color: var(--primary-500);
+  color: var(--white)}
