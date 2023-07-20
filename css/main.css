@@ -409,6 +409,16 @@ ul {
   margin-top: 35px;
 }
 
+/* .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 50px auto;
+  margin-left: 90px;
+} */
+
+
 .sec-cotent{
   flex: 1;
   width: 600px;
@@ -580,3 +590,5 @@ footer {
 
 
 /* contact us */
+.contact-us {
+  color: var(--white)}
