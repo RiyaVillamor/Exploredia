@@ -409,14 +409,14 @@ ul {
   margin-top: 35px;
 }
 
-.container{
+/* .container{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 90%;
   margin: 50px auto;
   margin-left: 90px;
-}
+} */
 
 .sec-cotent{
   flex: 1;
@@ -488,4 +488,4 @@ ul {
 
 footer {
   background-color: var(--primary-500);
-  color: var(--white);
+  color: var(--white)}
