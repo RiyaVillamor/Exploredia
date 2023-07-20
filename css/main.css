@@ -621,6 +621,35 @@ footer {
   
 } 
 
+/* start section card */
+
+  
+.btn-read {
+  padding: 1px 8px; 
+  border-radius: 30px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  height: 26px; 
+  margin-right: 8px; 
+}
+
+.image-container {
+  height: 150px; 
+  overflow: hidden; 
+}
+
+.pricing{
+  margin-top: -15px;
+}
+
+ /* end section card */
+
 
 /* contact us */
 .contact-us {
