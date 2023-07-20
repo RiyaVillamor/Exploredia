@@ -448,9 +448,19 @@ ul {
   margin-left: 85px;
 }
 
+
 .hr-foot {
   width: 60px; 
-  height: 2px} */
+  height: 2px
+} 
+
+.bg-m-v{
+  background-color: var(--primary-200);
+}
+
+.card-text{
+  color: var(--primary-700);
+}
 
 
 /* countries-section */
