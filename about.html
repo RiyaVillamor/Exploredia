@@ -22,74 +22,117 @@
 
     <body>
         <!-- start of navbar -->
-        <nav class="navbar bg-body-tertiary fixed-top">
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <div class="logo-container">
+            <img class="logo-mv" src="assets/exploredia-navbar.png" alt="favicon-exploredia" width="200px">
+            <!-- <span class="colored-letter fw-bold fs-6">E</span><span class="colored-word fw-bold fs-6">xploredia</span> -->
+          </div>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary me-5">
             <div class="container-fluid">
-                <div>
-                    <img class="logo-mv" src="assets/favicon-exploredia.png" alt="favicon-exploredia" width="70px">
-                    <span class="colored-letter fw-bold mb-2">E</span><span class="colored-word fw-bold">xploredia</span>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active ms-5 fw-bold" aria-current="page" href="index.html">HOME</a>
+                  <a class="nav-link ms-5 fw-bold" href="translate.html">TRANSLATE</a>
+                  <a class="nav-link ms-5 fw-bold" href="convert.html">CONVERT</a>
+                  <a class="nav-link ms-5 fw-bold" href="countries.html">COUNTRIES</a>
                 </div>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary me-5">
-                    <div class="container-fluid">
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-link active ms-5 fw-bold" aria-current="page" href="index.html">HOME</a>
-                                <a class="nav-link ms-5 fw-bold" href="translate.html">TRANSLATE</a>
-                                <a class="nav-link ms-5 fw-bold" href="convert.html">CONVERT</a>
-                                <a class="nav-link ms-5 fw-bold" href="countries.html">COUNTRIES</a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="colored-letter fw-bold"
-                                id="colored-brand">E</span><span class="colored-word fw-bold"
-                                id="colored-brand-2">xploredia</span>
-                            </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active fw-semibold" aria-current="page" href="#">HOME</a>
-                                </li>
-                                <li class="nav-item fw-semibold mt-3">
-                                    <a class="nav-link" href="countries.html">COUNTRIES</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fw-semibold mt-3" href="about.html">ABOUT</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fw-semibold mt-3" href="contact-us.html">CONTACT US</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        OTHER FEATURES
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item hov-translate" href="translate.html">TRANSLATE</a></li>
-                                        <hr class="dropdown-divider">
-                                        <li><a class="dropdown-item hov-convert" href="convert.html">CONVERT</a></li>
-                                        <!-- <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </nav>
-        <!-- end of navbar -->
+          </nav>
+          <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="colored-letter fw-bold"
+                    id="colored-brand">E</span><span class="colored-word fw-bold" id="colored-brand-2">xploredia</span>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active fw-semibold" aria-current="page" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item fw-semibold mt-3">
+                    <a class="nav-link" href="countries.html">COUNTRIES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold mt-3" href="about.html">ABOUT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-semibold mt-3" href="#contact-us">CONTACT US</a>
+                  </li>
+                  <li class="nav-item dropdown mt-3">
+                    <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      OTHER FEATURES
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item hov-translate" href="translate.html">TRANSLATE</a></li>
+                      <hr class="dropdown-divider">
+                      <li><a class="dropdown-item hov-convert" href="convert.html">CONVERT</a></li>
+                      <!-- <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="colored-letter fw-bold"
+                id="colored-brand">E</span><span class="colored-word fw-bold" id="colored-brand-2">xploredia</span>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item fw-semibold mt-3">
+                <a class="nav-link" href="countries.html">COUNTRIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold mt-3" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold mt-3" href="#contact-us">CONTACT US</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  OTHER FEATURES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item hov-translate" href="translate.html">TRANSLATE</a></li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item hov-convert" href="convert.html">CONVERT</a></li>
+                  <!-- <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end of navbar -->
         <br>
         <br>
         <br>
@@ -97,7 +140,9 @@
 
        <section class="sec">
             <div class="heading">
-                <h1>About Us</h1>
+              <div class="main-text">
+                <p class="contact-us-title"><span class="colored-letter">A</span><span class="colored-word">bout Us</span></p>
+              </div>
             </div>
             <br>
             <div class="container-fluid">
