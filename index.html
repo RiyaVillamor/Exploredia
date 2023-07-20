@@ -25,9 +25,9 @@
       <!-- start of navbar -->
       <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
-          <div>
-            <img class="logo-mv" src="assets/favicon-exploredia.png" alt="favicon-exploredia" width="70px">
-            <span class="colored-letter fw-bold mb-2">E</span><span class="colored-word fw-bold">xploredia</span>
+          <div class="logo-container">
+            <img class="logo-mv" src="assets/exploredia-navbar.png" alt="favicon-exploredia" width="200px">
+            <!-- <span class="colored-letter fw-bold fs-6">E</span><span class="colored-word fw-bold fs-6">xploredia</span> -->
           </div>
           <nav class="navbar navbar-expand-lg bg-body-tertiary me-5">
             <div class="container-fluid">
@@ -141,7 +141,7 @@
         <div class="content">
           <h5>Welcome To World</h5>
           <h1>Visit <span class="changecontent"></span></h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, quisquam.</p>
+          <p>Explore countries worldwide with ease and access comprehensive travel information in one place.</p>
           <a href="#contact-us">Contact Us</a>
         </div>
       </div>
@@ -176,38 +176,7 @@
       </section>
 
 
-      <section>
-        
-      </section> -->
 
-      <section>
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- end of destination section -->
 
@@ -229,20 +198,22 @@
           </div>
 
           <div class="row">
-            <div class="col-md-6 py-3 py-md-0">
+            <div class="col-md-6 py-2 py-md-0">
               <div class="card">
-                <img src="./assets/contact-us.jpg" class="rounded">
+                <img src="./assets/contact-us.jpg" class="rounded" height="500px">
               </div>
             </div>
 
-            <div class="col-md-6 py-3 py-md-0">
+            <div class="col-md-6 py-3 py-md-0 mb-3">
               <form action="#">
                 <input type="text" class="form-control" placeholder="Enter your destinations" required> <br>
                 <input type="text" class="form-control" placeholder="How many People" required> <br>
                 <input type="date" class="form-control" placeholder="Arrival point" required> <br>
                 <input type="date" class="form-control" placeholder="Departure" required> <br>
                 <textarea class="form-control" rows="5" name="text" placeholder="Enter your name & other details"></textarea>
-                <input type="submit" value="Book Now" class="submit" required>
+                <div class="b-submit d-flex justify-content-center">
+                  <input type="submit" value="Book Now" class="submit" required>
+                </div>
               </form>
             </div>
           </div>

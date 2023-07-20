@@ -293,17 +293,15 @@ ul {
 
 .colored-letter {
   color: var(--accent);
-  font-size: 2em;
+  font-size: 3em;
   font-family: var(--bodyFont);
 }
 
 .colored-word {
   color: var(--primary-500);
-  font-size: 2em;
-  font-family: var(--bodyFont);
+  font-size: 2rem;
+  font-family: var(--bodyFont);}
 
-
-}
 
 #colored-brand{
   font-size: 1.5em;
@@ -333,7 +331,7 @@ ul {
 }
 
 @media only screen and (max-width: 768px) {
-  .navbar {
+  /* .navbar {
     font-size: 0.8rem;
     margin-bottom: 0;
   }
@@ -345,7 +343,20 @@ ul {
 
   .logo-mv {
     width: 60px;
+  } */
+
+  .logo-container {
+    display: flex;
+    align-items: center;
   }
+  
+  .logo-mv {
+    height: 70px;   margin-right: 8px;}
+  
+  .text-container {
+    display: flex;
+    align-items: center;
+    height: 70px; }
 
   .search-form {
     display: flex;
@@ -501,7 +512,6 @@ footer {
   background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(../assets/home-bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 90;
 }
 
 .home .content {
@@ -548,7 +558,7 @@ footer {
 
 .home .content p{
   color: var(--white);
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   text-shadow: 0px 1px 1px var(--black);
   margin-bottom: 30px;
@@ -578,6 +588,12 @@ footer {
 } 
 
 @media (max-width:450px) {
+
+  .logo-mv{
+    width: 180px;
+    height: 50px;
+  }
+
   .home .content h5 {
     font-size: 20px;
   }
@@ -586,8 +602,23 @@ footer {
     font-size: 33px;
   }
   .home .content p {
-    font-size: 23px;
+    font-size: 12px;
   }
+
+  .b-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home {
+    margin-bottom: -35px;
+  }
+
+  .main-text {
+    margin-bottom: -45px;
+  }
+  
 } 
 
 
@@ -595,7 +626,6 @@ footer {
 .contact-us {
   color: var(--white);
   background: var(--white);
-
 }
 
 .contact-us-title {
@@ -631,7 +661,7 @@ footer {
   width: 160px;
   font-size: var(--small-text);
   font-weight: 550;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .contact-us .submit:hover {
@@ -644,8 +674,8 @@ footer {
   }
   .contact-us-title {
     padding: 20px;
+  }
 
-}
 }
 
 
