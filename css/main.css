@@ -409,8 +409,6 @@ ul {
   margin-top: 35px;
 }
 
-
-
 .sec-cotent{
   flex: 1;
   width: 600px;
@@ -482,3 +480,103 @@ ul {
 footer {
   background-color: var(--primary-500);
   color: var(--white); }
+
+  /* home section */
+
+.home {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(home-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 90;
+}
+
+.home .content {
+  text-align: center;
+  padding-top: 200px ;
+
+}
+
+.home .content h5 {
+  color: var(--white);
+  font-size: 38px;
+  text-shadow: 0px 1px 1px var(--black);
+}
+
+.home .content h1 {
+  color: var(--white);
+  font-size: 70px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px var(--black);
+  margin-top: 5px;
+}
+
+.changecontent::after {
+  content: '';
+  color: var(--accent);
+  text-shadow: 0px 1px 1px var(--black);
+  animation: changetext 10s infinite linear;
+
+}
+
+@keyframes changetext {
+ 0% {content: "Japan";}
+ 10% {content: "Philippines";}
+ 20% {content: "Australia";}
+ 30% {content: "France";}
+ 40% {content: "Canada";}
+ 50% {content: "China";}
+ 60% {content: "Dubai";}
+ 70% {content: "Germany";}
+ 80% {content: "Russia";}
+ 90% {content: "Spain";}
+ 100% {content: "Spain";}
+}
+
+.home .content p{
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px var(--black);
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+
+.home .content a {
+  padding: 6px;
+  background: var(--primary-500);
+  color: var(--white);
+  letter-spacing: 1px;
+  font-weight: 500;
+  border-radius: var(--borderRadius);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.home .content a:hover { 
+  background: var(--accent);
+  color: var(--white);
+}
+
+@media (max-width:850px) {
+  .home {
+    background-position: 50%;
+  }
+} 
+
+@media (max-width:450px) {
+  .home .content h5 {
+    font-size: 20px;
+  }
+
+  .home .content h1 {
+    font-size: 33px;
+  }
+  .home .content p {
+    font-size: 23px;
+  }
+} 
+
+
+/* contact us */
