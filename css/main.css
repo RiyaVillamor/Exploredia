@@ -573,8 +573,54 @@ footer {
   content: '';
   color: var(--accent);
   text-shadow: 0px 1px 1px var(--black);
-  animation: changetext 10s infinite linear;
+  animation: changetext 50s infinite linear;
 
+}
+
+@keyframes country {
+  0% {
+    background-image: url('../assets/tourist-spot/84-jap.jpg');
+  }
+  10% {
+    background-image: url('../assets/tourist-spot/138-phi.jpg');
+  }
+  20% {
+    background-image: url('../assets/tourist-spot/9-austra.jpg');
+  }
+  30% {
+    background-image: url('../assets/tourist-spot/60-fra.jpg');
+  }
+  40% {
+    background-image: url('../assets/tourist-spot/32-can.jpg');
+  }
+  50% {
+    background-image: url('../assets/tourist-spot/36-china.jpg');
+  }
+  60% {
+    background-image: url('../assets/tourist-spot/168-swi.jpg');
+  }
+  70% {
+    background-image: url('../assets/tourist-spot/64-ger.jpg');
+  }
+  80% {
+    background-image: url('../assets/tourist-spot/143-rus.jpg');
+  }
+  90% {
+    background-image: url('../assets/tourist-spot/163-spa.jpg');
+  }
+  100% {
+    background-image: url('../assets/tourist-spot/124-net.jpg');
+  }
+}
+
+.home {
+  width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: country;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes changetext {
@@ -584,11 +630,11 @@ footer {
  30% {content: "France";}
  40% {content: "Canada";}
  50% {content: "China";}
- 60% {content: "Dubai";}
+ 60% {content: "Switzerland";}
  70% {content: "Germany";}
  80% {content: "Russia";}
  90% {content: "Spain";}
- 100% {content: "Spain";}
+ 100% {content: "Netherland";}
 }
 
 .home .content p{
@@ -607,7 +653,7 @@ footer {
   letter-spacing: 1px;
   font-weight: 500;
   border-radius: var(--borderRadius);
-  transition: 0.5s;
+  transition: 0.10s;
   cursor: pointer;
 }
 
@@ -619,6 +665,7 @@ footer {
 @media (max-width:850px) {
   .home {
     background-position: 50%;
+
   }
 } 
 
@@ -628,6 +675,7 @@ footer {
     width: 180px;
     height: 50px;
   }
+
 
   .home .content h5 {
     font-size: 20px;
@@ -644,6 +692,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8px;
   }
 
   .home {
@@ -653,8 +702,28 @@ footer {
   .main-text {
     margin-bottom: -45px;
   }
+
+  /* start about us */
+
+  .contact-us-main {
+    margin-top: -45px;
+  }
+
+  .contact-us-btn {
+    margin-top: 15px;
+  }
+
+  .miss-vis {
+    margin-top: -20px;
+  }
+
+  .our-team-top {
+    margin-top: -25px;
+  }
+
   
 } 
+
 
 /* start section card */
 

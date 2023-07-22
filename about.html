@@ -55,7 +55,7 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link active fw-semibold" aria-current="page" href="#">HOME</a>
+                    <a class="nav-link active fw-semibold" aria-current="page" href="index.html">HOME</a>
                   </li>
                   <li class="nav-item fw-semibold mt-3">
                     <a class="nav-link" href="countries.html">COUNTRIES</a>
@@ -75,10 +75,6 @@
                       <li><a class="dropdown-item hov-translate" href="translate.html">TRANSLATE</a></li>
                       <hr class="dropdown-divider">
                       <li><a class="dropdown-item hov-convert" href="convert.html">CONVERT</a></li>
-                      <!-- <li>
-                                <hr class="dropdown-divider">
-                              </li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                     </ul>
                   </li>
                 </ul>
@@ -102,7 +98,7 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active fw-semibold" aria-current="page" href="#">HOME</a>
+                <a class="nav-link active fw-semibold" aria-current="page" href="index.html">HOME</a>
               </li>
               <li class="nav-item fw-semibold mt-3">
                 <a class="nav-link" href="countries.html">COUNTRIES</a>
@@ -111,7 +107,7 @@
                 <a class="nav-link fw-semibold mt-3" href="about.html">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-semibold mt-3" href="#contact-us">CONTACT US</a>
+                <a class="nav-link fw-semibold mt-3" href="contact-us">CONTACT US</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
@@ -122,10 +118,6 @@
                   <li><a class="dropdown-item hov-translate" href="translate.html">TRANSLATE</a></li>
                   <hr class="dropdown-divider">
                   <li><a class="dropdown-item hov-convert" href="convert.html">CONVERT</a></li>
-                  <!-- <li>
-                            <hr class="dropdown-divider">
-                          </li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                 </ul>
               </li>
             </ul>
@@ -141,10 +133,12 @@
         <div class="bg-light">
           <div class="container py-1">
             <div class="row h-100 align-items-center py-1">
-              <div class="col-lg-6">
-                <p class="contact-us-title text-start my-3"><span class="colored-letter">A</span><span class="colored-word">bout Us</span></p>
-                <p class="lead mb-0">Exploredia is a comprehensive country and travel guide <br> that allows you to choose any country worldwide and provides <br/> key information, including flags, capitals, currencies, and population. <br> Our platform also offers a language translation function similar <br/>to Google Translate, along with a currency converter, recommended routes,<br> and essential tips for tourists. With Exploredia, you can <br/> effortlessly explore countries and access all the necessary travel <br> information in one place. We ensure that you're well-prepared <br/> for your trip by providing essential tips on local customs, etiquette, <br> and must-visit attractions..</p>
-                <a href="#" class="btn btn-danger mt-3">Contact Us</a>
+              <div class="col-lg-6 contact-us-main">
+                <p class="contact-us-title text-center my-3"><span class="colored-letter">A</span><span class="colored-word">bout Us</span></p>
+                <p class="lead contact-us-content mb-0">Exploredia is a comprehensive country and travel guide that allows you to choose any country worldwide and provides key information, including flags, capitals, currencies, and population. Our platform also offers a language translation function similar <br/>to Google Translate, along with a currency converter, recommended routes, and essential tips for tourists. With Exploredia, you can <br/> effortlessly explore countries and access all the necessary travel <br> information in one place. We ensure that you're well-prepared <br/> for your trip by providing essential tips on local customs, etiquette, <br> and must-visit attractions..</p>
+                <div class="contact-us-btn d-flex justify-content-center">
+                  <a href="#contact-us" class="btn btn-danger mt-3">Contact Us</a>
+                </div>
               </p>
               </div>
               <div class="col-lg-6 d-none d-lg-block"><img src="./assets/about-us.jpg" alt="" class="img-fluid"></div>
@@ -154,37 +148,38 @@
 
        <!-- start mission and vision -->
 
-        <div class="container-fluid ">
-            <div class="row d-flex justify-content-center mt-5 mb-3">
-                <div class="col-sm-5 mb-3 mb-sm-0 me-1">
-                  <div class="card bg-m-v shadow p-1 bg-light">
-                    <div class="card-body bg-light">
-                      <h5 class="card-title-mv colored-word text-center">Mission</h5>
-                      <p class="card-text text-center">Mission is to be the go-to platform that empowers individuals to explore and understand diverse countries worldwide. We provide accurate, up-to-date, and reliable information in a user-friendly interface, fostering global awareness and cultural diversity appreciation.</p>
-                    </div>
+        <div class="container-fluid miss-vis ">
+          <div class="row d-flex justify-content-center mt-5 mb-3">
+              <div class="col-sm-5 mb-3 mb-sm-0 me-1">
+                <div class="card bg-m-v shadow p-1 bg-light">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title-mv colored-word text-center">Mission</h5>
+                    <p class="card-text text-center">Mission is to be the go-to platform that empowers individuals to explore and understand diverse countries worldwide. We provide accurate, up-to-date, and reliable information in a user-friendly interface, fostering global awareness and cultural diversity appreciation.</p>
                   </div>
                 </div>
-                <div class="col-sm-5 mb-3 mb-sm-0">
-                  <div class="card bg-m-v shadow p-1 bg-light">
-                    <div class="card-body bg-light">
-                      <h5 class="card-title-mv text-center colored-word">Vision</h5>
-                      <p class="card-text text-center">Our vision is to be the top online destination for country-related information, bridging diverse backgrounds and cultures. We aim to inspire curiosity, understanding, and appreciation for our global community, empowering individuals to become informed global citizens and promoting unity.</p>
-                    </div>
+              </div>
+              <div class="col-sm-5 mb-3 mb-sm-0 mb-2">
+                <div class="card bg-m-v shadow p-1 bg-light">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title-mv text-center colored-word">Vision</h5>
+                    <p class="card-text text-center">Our vision is to be the top online destination for country-related information, bridging diverse backgrounds and cultures. We aim to inspire curiosity, understanding, and appreciation for our global community, empowering individuals to become informed global citizens and promoting unity.</p>
                   </div>
                 </div>
-            </div>
+              </div>
+          </div>
         </div>
        </section>
 
        <!-- end mission and vision -->
 
        <!-- start our team -->
+       
 
        <div class="bg-light mt-5">
         <div class="container">
-          <div class="row mb-4 d-flex justify-content-center">
+          <div class="row mb-4 our-team-top d-flex justify-content-center">
             <div class="col-lg-5">
-              <p class="text-center"><span class="colored-letter">O</span><span class="colored-word">ur Team</span></p>
+              <p class="text-center"><span class="colored-letter fw-bold">O</span><span class="colored-word fw-bold"">ur Team</span></p>
               <p class="font-italic text-center">
                Meet the website creators: A dynamic, dedicated, innovative team delivering exceptional solutions.</p>
             </div>
@@ -273,11 +268,11 @@
                 <!-- grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                   <!-- links -->
-                  <h6 class="text-uppercase fw-bold">Contact</h6>
+                  <h6 class="text-uppercase fw-bold" id="contact-us">Contact</h6>
                   <hr class="mb-3 mt-0 d-inline-block mx-auto hr-foot"/>
-                  <p class="mt-2"><i class="fas fa-home mr-3"></i> 143 Calye, Taguig, Manila</p>
-                  <p class="mt-2"><i class="fas fa-envelope mr-3"></i> traveldesk@exploredia.com</p>
-                  <p class="mt-2"><i class="fas fa-phone mr-3"></i> 0914 314 1431</p>
+                  <p class="mt-2"><i class="fas fa-home mr-3 icon-container"></i> 143 Calye, Taguig, Manila</p>
+                  <p class="mt-2"><i class="fas fa-envelope mr-3 icon-container"></i> traveldesk@exploredia.com</p>
+                  <p class="mt-2"><i class="fas fa-phone mr-3 icon-container"></i> 0914 314 1431</p>
                 </div>
                 <!-- grid column -->
   
@@ -300,7 +295,7 @@
                       <i class="fab fa-google  icon-container"></i>
                     </a>
                     <a href="https://www.instagram.com/" class="text-white me-2">
-                      <i class="fab fa-instagram "></i>
+                      <i class="fab fa-instagram icon-container"></i>
                     </a>
                   <!-- </div> -->
                 </div>
