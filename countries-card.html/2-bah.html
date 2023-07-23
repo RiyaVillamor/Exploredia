@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exploredia</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/favicon-exploredia.png" type="image/x-icon" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="../css/main.css" />
+
+  <style>
+    body {
+      margin: 20px;
+    }
+
+    h5 {
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .fa-icon {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- start of navbar -->
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <div class="logo-container">
+        <img class="logo-mv" src="../assets/exploredia-navbar.png" alt="favicon-exploredia" width="200px">
+        <!-- <span class="colored-letter fw-bold fs-6">E</span><span class="colored-word fw-bold fs-6">xploredia</span> -->
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary me-5">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active ms-5 fw-bold" aria-current="page" href="../index.html">HOME</a>
+              <a class="nav-link ms-5 fw-bold" href="../translate.html">TRANSLATE</a>
+              <a class="nav-link ms-5 fw-bold" href="../convert.html">CONVERT</a>
+              <a class="nav-link ms-5 fw-bold" href="../countries.html">COUNTRIES</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="colored-letter fw-bold"
+                id="colored-brand">E</span><span class="colored-word fw-bold" id="colored-brand-2">xploredia</span>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item fw-semibold mt-3">
+                <a class="nav-link" href="../countries.html">COUNTRIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold mt-3" href="../about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold mt-3" href="#contact-us">CONTACT US</a>
+              </li>
+              <li class="nav-item dropdown mt-3">
+                <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  OTHER FEATURES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item hov-translate" href="../translate.html">TRANSLATE</a></li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item hov-convert" href="../convert.html">CONVERT</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="colored-letter fw-bold"
+            id="colored-brand">E</span><span class="colored-word fw-bold" id="colored-brand-2">xploredia</span>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold" aria-current="page" href="../index.html">HOME</a>
+          </li>
+          <li class="nav-item fw-semibold mt-3">
+            <a class="nav-link" href="../countries.html">COUNTRIES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold mt-3" href="../about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold mt-3" href="#contact-us">CONTACT US</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              OTHER FEATURES
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item hov-translate" href="../translate.html">TRANSLATE</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item hov-convert" href="../convert.html">CONVERT</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end of navbar -->
+  <br>
+  <br>
+  <br>
+  <!-- start of countries content -->
+  <!-- page Content -->
+
+  <div class="container-fluid mb-5 ">
+    <div class="col-12 col-md-12 col-sm-10 ms-4">
+      <div class="row mx-0">
+        <div class="col-11 col-md-11">
+          <div class="container mt-1">
+            <!--item row -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <img class="img-fluid" src="../assets/tourist-spot/13-bahr.jpg" alt="Bahrain">
+              </div>
+
+              <div class="col-md-5">
+                <h3 class="my-3">Bahrain<img src="https://flagcdn.com/w40/bh.png" width="40" alt="Bahrain">
+                </h3>
+
+                <p>Australia is home to the Great Barrier Reef, the world's
+                  largest living structure visible from space. It boasts unique wildlife,
+                  such as kangaroos, koalas, and platypuses, and the iconic Sydney Opera House.</p>
+                <h3 class="my-3">Facts</h3>
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Capital</th>
+                      <td>Manama</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Region</th>
+                      <td>Middle East</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Population</th>
+                      <td>1,485,509</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Language</th>
+                      <td>Arabic</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Currency</th>
+                      <td>Bahraini Dinar (BHD)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- end of item row -->
+              <!-- start of new accordion -->
+              <div class="accordion mt-5" id="accordion-id">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Visa Information
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordion-id">
+                    <div class="accordion-body">
+                      <h5>Bahrain Visa Information</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-info-circle fa-icon"></i> General Information</th>
+                        </tr>
+                        <tr>
+                          <td>Bahrain has specific visa requirements for travelers based on their nationality and the
+                            purpose of their visit. The visa regulations may vary depending on the duration and nature
+                            of your stay. It is important to verify the current visa requirements before planning your
+                            trip to Bahrain.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-plane-departure fa-icon"></i> Tourist Visa</th>
+                        </tr>
+                        <tr>
+                          <td>Citizens of certain countries may be eligible for visa-free entry into Bahrain for
+                            tourism purposes, typically for short stays. However, visa requirements may apply depending
+                            on your nationality. Check if your country is part of the visa waiver program or if you need
+                            to apply for a tourist visa.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-plane-departure fa-icon"></i> Visa Extension</th>
+                        </tr>
+                        <tr>
+                          <td>If you wish to extend your stay beyond the visa-free period, you may need to apply for
+                            a visa extension through the General Directorate of Nationality, Passport, and Residence
+                            (NPRA) in Bahrain.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-file-signature fa-icon"></i> Application Process</th>
+                        </tr>
+                        <tr>
+                          <td>The application process for a tourist visa or visa extension usually involves
+                            submitting the required documents and paying the necessary fees. The application procedures
+                            may differ, so it is advisable to check with the Bahraini embassy or consulate in your
+                            country for specific guidelines.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-money-bill-wave fa-icon"></i> Visa Fee</th>
+                        </tr>
+                        <tr>
+                          <td>Visa fees, if applicable, will vary based on the type of visa and your nationality.
+                            Confirm the current visa fees with the Bahraini embassy or consulate.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-calendar-check fa-icon"></i> Visa Validity and Expiration</th>
+                        </tr>
+                        <tr>
+                          <td>The validity and expiration of the visa will depend on the type of visa issued and the
+                            duration approved by the General Directorate of Nationality, Passport, and Residence (NPRA)
+                            in Bahrain.</td>
+                        </tr>
+                      </table>
+                      <strong>Note:</strong>
+                      </br>
+                      </br>
+
+                      <p>The visa requirements and application process for Bahrain may differ based on your nationality
+                        and the purpose of your visit. It is essential to verify the current visa regulations with the
+                        Bahraini embassy or official government sources before planning your trip to Bahrain.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Recommended Travel Itinerary and Cost Estimation
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion-id">
+                    <div class="accordion-body">
+
+                      <h5>Route A: Manama to Amwaj Islands</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i>Attractions</th>
+                          <td>Manama, Muharraq, Amwaj Islands</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i>Travel Duration</th>
+                          <td>Approximately 3-5 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i>Transportation</th>
+                          <td>Taxis or rental cars</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i>Estimated Travel Costs</th>
+                          <td>BHD 300 - 500</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i>Days & Nights</th>
+                          <td>3-5 days, including 1-2 nights in Manama, 1-2 nights in Muharraq, and 1-2 nights in Amwaj
+                            Islands</td>
+                        </tr>
+                      </table>
+
+                      <h5>Route B: Riffa to Bahrain Fort</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i>Attractions</th>
+                          <td>Riffa, Isa Town, Bahrain Fort</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i>Travel Duration</th>
+                          <td>Approximately 2-4 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i>Transportation</th>
+                          <td>Taxis or rental cars</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i>Estimated Travel Costs</th>
+                          <td>BHD 200 - 400</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i>Days & Nights</th>
+                          <td>2-4 days, including 1-2 nights in Riffa, 1-2 nights in Isa Town, and 1-2 nights near
+                            Bahrain Fort</td>
+                        </tr>
+                      </table>
+
+                      <h5>Route C: Manama to Al Areen Wildlife Park</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i>Attractions</th>
+                          <td>Manama, Sakhir, Al Areen Wildlife Park</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i>Travel Duration</th>
+                          <td>Approximately 2-3 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i>Transportation</th>
+                          <td>Taxis or rental cars</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i>Estimated Travel Costs</th>
+                          <td>BHD 150 - 300</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i>Days & Nights</th>
+                          <td>2-3 days, including 1-2 nights in Manama and 1 night near Al Areen Wildlife Park</td>
+                        </tr>
+                      </table>
+
+                      <h5>Route D: Muharraq to Arad</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i>Attractions</th>
+                          <td>Muharraq, Busaiteen, Arad</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i>Travel Duration</th>
+                          <td>Approximately 2-3 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i>Transportation</th>
+                          <td>Taxis or rental cars</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i>Estimated Travel Costs</th>
+                          <td>BHD 150 - 300</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i>Days & Nights</th>
+                          <td>2-3 days, including 1-2 nights in Muharraq and 1 night in Arad</td>
+                        </tr>
+                      </table>
+
+                      <strong>Note:</strong>
+                      </br>
+                      </br>
+
+                      <p>These figures
+                        are rough estimates and can vary based on various factors such as the time of travel,
+                        accommodation choices, dining
+                        preferences, and activities undertaken during the trip. It's always advisable to research and
+                        plan your trip
+                        according to your budget and preferences.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      Tourist Etiquette - Traditions and Prohibited Actions
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion-id">
+                    <div class="accordion-body">
+                      <h5>Guide to Bahrain: Facts and Information</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-globe-americas fa-icon"></i> Geography</th>
+                          <td>Bahrain is a small island country located in the Persian Gulf. It is situated off the
+                            eastern coast of Saudi
+                            Arabia. Bahrain is known for its rich history, vibrant culture, and beautiful coastal
+                            landscapes.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-city fa-icon"></i> Capital City</th>
+                          <td>Manama is the capital city of Bahrain. It is a bustling metropolis known for its modern
+                            architecture,
+                            traditional souks, and historic sites.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-language fa-icon"></i> Language</th>
+                          <td>Arabic is the official language of Bahrain. English is also widely used, especially in
+                            business and
+                            communication with tourists.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-money-bill-wave fa-icon"></i> Currency</th>
+                          <td>The currency used in Bahrain is the Bahraini Dinar (BHD). Credit cards are accepted in
+                            major establishments,
+                            and ATMs are readily available.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-cloud-sun fa-icon"></i> Climate</th>
+                          <td>Bahrain has a desert climate with hot summers and mild winters. Summer temperatures can be
+                            extremely high,
+                            so it's important to stay hydrated and avoid direct sun exposure during peak hours.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-paw fa-icon"></i> Wildlife</th>
+                          <td>Bahrain's wildlife is adapted to desert conditions and includes desert foxes, various bird
+                            species, and
+                            marine life in its coastal waters.</td>
+                        </tr>
+                      </table>
+                      <h5>Cultural Traditions and Prohibited Behaviors</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-users fa-icon"></i> Local Culture</th>
+                          <td>Bahrain has a rich cultural heritage influenced by its ancient history and Islamic
+                            traditions. It is
+                            essential to show respect for local customs and traditions when interacting with Bahrainis.
+                          </td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-utensils fa-icon"></i> Dining Etiquette</th>
+                          <td>When dining in Bahrain, it is customary to use your right hand for eating and greeting.
+                            Bahrainis are known
+                            for their hospitality, and accepting offers of food and drinks is a sign of appreciation.
+                          </td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-futbol fa-icon"></i> Cultural Celebrations</th>
+                          <td>Bahrain celebrates various cultural and religious festivals, such as Eid al-Fitr and
+                            National Day. Respect
+                            local customs and participate in these celebrations with an open heart.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-umbrella-beach fa-icon"></i> Beach Culture</th>
+                          <td>Bahrain's coastline is a popular destination for both locals and tourists. Observe beach
+                            safety guidelines,
+                            and respect local regulations to ensure a pleasant beach experience.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-palette fa-icon"></i> Arts and Crafts</th>
+                          <td>Bahrain has a thriving art scene, including traditional crafts and contemporary art.
+                            Support local artists
+                            and craftsmen by purchasing authentic Bahraini products.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-leaf fa-icon"></i> Environmental Conservation</th>
+                          <td>Bahrain values environmental conservation. Practice responsible tourism, dispose of waste
+                            properly, and
+                            respect protected areas and marine sanctuaries.</td>
+                        </tr>
+                      </table>
+                      <h5>Prohibited Behaviors or Actions</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-times-circle fa-icon"></i> Prohibited Behaviors or Actions</th>
+                          <td>
+                            <ul>
+                              <li>Public displays of affection should be avoided, as they are considered inappropriate
+                                in public spaces.</li>
+                              <li>Public consumption of alcohol is limited to licensed venues.</li>
+                              <li>Respect religious customs and avoid disrespectful behavior, especially during prayer
+                                times.</li>
+                              <li>Photography of certain government buildings and sensitive areas may be restricted.
+                              </li>
+                              <li>Engaging in political discussions or activism is discouraged for tourists.</li>
+                              <li>Do not engage in any form of gambling, which is generally illegal in Bahrain.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </table>
+                      <strong>Remember:</strong>
+                      </br>
+                      </br>
+
+                      <p>Bahrain is a country with a rich cultural heritage and warm hospitality. Embrace the local
+                        traditions, enjoy the
+                        diverse experiences it offers, and be a responsible and respectful visitor during your stay.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of new accordion -->
+            <!-- end of countries content-->
+
+            <script src="./js/app.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+              crossorigin="anonymous"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- start of footer -->
+  <footer class="text-center text-lg-start">
+    <!-- section: pending -->
+    <section class="d-flex justify-content-between p-4" style="background-color: #e21e2d">
+    </section>
+    <!-- section: pending -->
+
+    <!-- section: Links  -->
+    <section>
+      <div class="container text-center text-md-start mt-5">
+        <!-- grid row -->
+        <div class="row mt-3">
+          <!-- grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Exploredia</h6>
+            <hr class="mb-3 mt-0 d-inline-block mx-auto hr-foot" />
+            <p>
+              Explore countries worldwide with ease and access comprehensive travel information in one place
+            </p>
+          </div>
+          <!-- grid column -->
+
+          <!-- grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Quick links</h6>
+            <hr class="mb-3 mt-0 d-inline-block mx-auto hr-foot" />
+            <p>
+              <a href="../index.html" class="text-white">Home</a>
+            </p>
+            <p class="mt-2">
+              <a href="../translate.html" class="text-white">Translate</a>
+            </p>
+            <p class="mt-2">
+              <a href="../convert.html" class="text-white">Convert</a>
+            </p>
+            <p class="mt-2">
+              <a href="../countries.html" class="text-white">Countries</a>
+            </p>
+          </div>
+          <!-- grid column -->
+
+          <!-- grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- links -->
+            <h6 class="text-uppercase fw-bold" id="contact-us">Contact</h6>
+            <hr class="mb-3 mt-0 d-inline-block mx-auto hr-foot" />
+            <p class="mt-2"><i class="fas fa-home mr-3 icon-container"></i> 143 Calye, Taguig, Manila</p>
+            <p class="mt-2"><i class="fas fa-envelope mr-3 icon-container"></i> traveldesk@exploredia.com</p>
+            <p class="mt-2"><i class="fas fa-phone mr-3 icon-container"></i> 0914 314 1431</p>
+          </div>
+          <!-- grid column -->
+
+          <!-- grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- links -->
+            <h6 class="text-uppercase fw-bold">Socials</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto hr-foot" />
+            <p>
+            </p>
+
+            <!-- <div class="icon-container"> -->
+            <a href="https://www.facebook.com/" class="text-white  me-4">
+              <i class="fab fa-facebook-f  icon-container"></i>
+            </a>
+            <a href="https://www.twitter.com/" class="text-white me-4">
+              <i class="fab fa-twitter  icon-container"></i>
+            </a>
+            <a href="https://www.gmail.com/" class="text-white me-4">
+              <i class="fab fa-google  icon-container"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="text-white me-2">
+              <i class="fab fa-instagram icon-container"></i>
+            </a>
+            <!-- </div> -->
+          </div>
+          <!-- grid column -->
+        </div>
+        <!-- grid row -->
+      </div>
+    </section>
+    <!-- section: links  -->
+
+    <!-- copyright -->
+    <div class="text-center p-3 copy mb-4">
+      ©2023 Exploredia.
+      <a class="text-white" href="https://exploredia.com/">All rights reserved.</a>
+    </div>
+    <!-- end of copyright -->
+  </footer>
+  <!-- end of footer -->
+</body>
+
+</html>

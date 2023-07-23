@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exploredia</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/favicon-exploredia.png" type="image/x-icon" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="../css/main.css" />
+
+  <style>
+    body {
+      margin: 20px;
+    }
+
+    h5 {
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .fa-icon {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- start of navbar -->
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <div class="logo-container">
+        <img class="logo-mv" src="../assets/exploredia-navbar.png" alt="favicon-exploredia" width="200px">
+        <!-- <span class="colored-letter fw-bold fs-6">E</span><span class="colored-word fw-bold fs-6">xploredia</span> -->
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary me-5">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active ms-5 fw-bold" aria-current="page" href="../index.html">HOME</a>
+              <a class="nav-link ms-5 fw-bold" href="../translate.html">TRANSLATE</a>
+              <a class="nav-link ms-5 fw-bold" href="../convert.html">CONVERT</a>
+              <a class="nav-link ms-5 fw-bold" href="../countries.html">COUNTRIES</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="colored-letter fw-bold"
+                id="colored-brand">E</span><span class="colored-word fw-bold" id="colored-brand-2">xploredia</span>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item fw-semibold mt-3">
+                <a class="nav-link" href="../countries.html">COUNTRIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold mt-3" href="../about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold mt-3" href="#contact-us">CONTACT US</a>
+              </li>
+              <li class="nav-item dropdown mt-3">
+                <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  OTHER FEATURES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item hov-translate" href="../translate.html">TRANSLATE</a></li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item hov-convert" href="../convert.html">CONVERT</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="colored-letter fw-bold"
+            id="colored-brand">E</span><span class="colored-word fw-bold" id="colored-brand-2">xploredia</span>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold" aria-current="page" href="../index.html">HOME</a>
+          </li>
+          <li class="nav-item fw-semibold mt-3">
+            <a class="nav-link" href="../countries.html">COUNTRIES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold mt-3" href="../about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold mt-3" href="#contact-us">CONTACT US</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              OTHER FEATURES
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item hov-translate" href="../translate.html">TRANSLATE</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item hov-convert" href="../convert.html">CONVERT</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end of navbar -->
+  <br>
+  <br>
+  <br>
+  <!-- start of countries content -->
+  <!-- page Content -->
+
+  <div class="container-fluid mb-5 ">
+    <div class="col-12 col-md-12 col-sm-10 ms-4">
+      <div class="row mx-0">
+        <div class="col-11 col-md-11">
+          <div class="container mt-1">
+            <!--item row -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <img class="img-fluid" src="../assets/tourist-spot/76-indi.jpg" alt="India">
+              </div>
+
+              <div class="col-md-5">
+                <h3 class="my-3">India<img src="https://flagcdn.com/w40/ae.png" width="40" alt="India">
+                </h3>
+
+                <p>India, a diverse land boasting Bollywood, Taj Mahal, yoga, Ganges River, vibrant festivals, intricate
+                  handicrafts, cricket obsession, Ayurveda, Bengal tigers, stepwells, and a rich cultural heritage.</p>
+                <h3 class="my-3">Facts</h3>
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Capital</th>
+                      <td>New Delhi</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Region</th>
+                      <td>South Asia</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Population</th>
+                      <td>1,428,627,663</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Language</th>
+                      <td>Hindi, English</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Currency</th>
+                      <td>Indian Rupee (INR)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- end of item row -->
+              <!-- start of new accordion -->
+              <div class="accordion mt-5" id="accordion-id">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Visa Information
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordion-id">
+                    <div class="accordion-body">
+                      <h5>India Visa Information</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-info-circle fa-icon"></i> General Information</th>
+                        </tr>
+                        <tr>
+                          <td>India has specific visa requirements for travelers based on their nationality and the
+                            purpose of their visit. The visa regulations may vary depending on the duration and nature
+                            of your stay. It is important to verify the current visa requirements before planning your
+                            trip to India.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-plane-departure fa-icon"></i> Tourist Visa</th>
+                        </tr>
+                        <tr>
+                          <td>1. Tourists from many countries are required to obtain a tourist visa before traveling to
+                            India. The tourist visa allows travelers to visit India for leisure, sightseeing, and
+                            visiting friends or relatives.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-plane-departure fa-icon"></i> Visa on Arrival</th>
+                        </tr>
+                        <tr>
+                          <td>2. Citizens of certain countries may be eligible for a visa on arrival, which allows them
+                            to obtain a visa at designated entry points in India. However, it is advisable to check if
+                            your country is eligible for this facility and to apply for an e-Visa in advance to avoid
+                            any inconvenience.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-file-signature fa-icon"></i> Application Process</th>
+                        </tr>
+                        <tr>
+                          <td>3. The application process for a tourist visa typically involves filling out an online
+                            application form, submitting the required documents, and paying the visa fee. The e-Visa
+                            application process is available for citizens of eligible countries.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-money-bill-wave fa-icon"></i> Visa Fee</th>
+                        </tr>
+                        <tr>
+                          <td>4. The visa fee for India will vary based on the type of visa and the duration of stay.
+                            Check the current visa fees with the Indian embassy or consulate in your country.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-calendar-check fa-icon"></i> Visa Validity and Expiration</th>
+                        </tr>
+                        <tr>
+                          <td>5. The validity and expiration of the visa will depend on the type of visa granted and the
+                            duration approved by the Indian authorities. Tourist visas are usually issued for single or
+                            multiple entries with varying validity periods.</td>
+                        </tr>
+                      </table>
+                      <strong>Note:</strong>
+                      </br>
+                      </br>
+
+                      <p>The visa requirements and application process for India may differ based on your nationality
+                        and the purpose of your visit. It is essential to verify the current visa regulations with the
+                        Indian embassy or official government sources before planning your trip to India.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Recommended Travel Itinerary and Cost Estimation
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion-id">
+                    <div class="accordion-body">
+
+                      <h5>Route A: Golden Triangle Tour</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i> Attractions</th>
+                          <td>Delhi, Agra, Jaipur</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i> Travel Duration</th>
+                          <td>Approximately 7-10 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i> Transportation</th>
+                          <td>Flights, trains, and private car/tourist buses</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i> Estimated Travel Costs</th>
+                          <td>INR 30,000 - 50,000</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i> Days & Nights</th>
+                          <td>7-10 days, including 2-3 nights in each city</td>
+                        </tr>
+                      </table>
+
+                      <h5>Route B: Rajasthan Cultural Tour</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i> Attractions</th>
+                          <td>Jaipur, Udaipur, Jodhpur, Pushkar</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i> Travel Duration</th>
+                          <td>Approximately 10-14 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i> Transportation</th>
+                          <td>Flights, trains, and private car/tourist buses</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i> Estimated Travel Costs</th>
+                          <td>INR 40,000 - 70,000</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i> Days & Nights</th>
+                          <td>10-14 days, including 2-3 nights in each major city</td>
+                        </tr>
+                      </table>
+
+                      <h5>Route C: Kerala Backwaters and Beaches</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i> Attractions</th>
+                          <td>Cochin, Alleppey, Munnar, Kovalam, Varkala</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i> Travel Duration</th>
+                          <td>Approximately 10-12 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i> Transportation</th>
+                          <td>Flights, trains, and local transportation</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i> Estimated Travel Costs</th>
+                          <td>INR 35,000 - 60,000</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i> Days & Nights</th>
+                          <td>10-12 days, including 2-3 nights in each major destination</td>
+                        </tr>
+                      </table>
+
+                      <h5>Route D: Varanasi and the Ganges River</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i> Attractions</th>
+                          <td>Varanasi, Allahabad, Sarnath, Rishikesh, Haridwar</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i> Travel Duration</th>
+                          <td>Approximately 8-10 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i> Transportation</th>
+                          <td>Flights, trains, and local transportation</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i> Estimated Travel Costs</th>
+                          <td>INR 25,000 - 45,000</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i> Days & Nights</th>
+                          <td>8-10 days, including 2-3 nights in Varanasi and 1-2 nights in each additional destination
+                          </td>
+                        </tr>
+                      </table>
+
+                      <strong>Note:</strong>
+                      </br>
+                      </br>
+
+                      <p>
+                        These figures are rough estimates and can vary based on various factors such as the time of
+                        travel, accommodation choices, dining preferences, and activities undertaken during the trip.
+                        It's always advisable to research and plan your trip according to your budget and preferences.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      Tourist Etiquette - Traditions and Prohibited Actions
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion-id">
+                    <div class="accordion-body">
+                      <h5>Guide to India: Facts and Information</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-globe-americas fa-icon"></i> Geography</th>
+                          <td>India is a diverse country located in South Asia. It is known for its vast landscapes,
+                            including the
+                            Himalayan mountains in the north and the coastline along the Arabian Sea and the Bay of
+                            Bengal.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-city fa-icon"></i> Capital City</th>
+                          <td>New Delhi is the capital of India and is renowned for its historical sites, bustling
+                            markets, and
+                            government institutions.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-language fa-icon"></i> Language</th>
+                          <td>Hindi and English are the two official languages of India. English is widely used in
+                            government,
+                            business, and education.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-money-bill-wave fa-icon"></i> Currency</th>
+                          <td>The currency used in India is the Indian Rupee (INR). Credit cards are accepted in major
+                            cities and
+                            tourist areas, and ATMs are easily accessible.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-cloud-sun fa-icon"></i> Climate</th>
+                          <td>India experiences a diverse climate due to its size and geographical features. It has
+                            tropical, desert,
+                            and temperate regions with distinct seasons.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-paw fa-icon"></i> Wildlife</th>
+                          <td>India is known for its rich biodiversity, with various species of wildlife, including
+                            Bengal tigers,
+                            elephants, and numerous bird species found in its national parks and reserves.</td>
+                        </tr>
+                      </table>
+                      <h5>Cultural Traditions and Prohibited Behaviors</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-users fa-icon"></i> Cultural Diversity</th>
+                          <td>India is a culturally diverse country with numerous ethnic groups and traditions. It is
+                            essential to
+                            show respect for local customs, religious practices, and cultural sensitivities when
+                            visiting different
+                            regions.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-utensils fa-icon"></i> Food Culture</th>
+                          <td>Indian cuisine is renowned for its flavors and diversity. When invited to a meal, it is
+                            customary to
+                            accept and try the dishes offered. Some regions may have specific dietary customs, so it's
+                            advisable to
+                            respect these preferences.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-futbol fa-icon"></i> Festivals and Celebrations</th>
+                          <td>India celebrates numerous festivals throughout the year, reflecting its cultural and
+                            religious
+                            diversity. When participating in these events, respect local traditions and be mindful of
+                            their
+                            significance.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-umbrella-beach fa-icon"></i> Travel Etiquette</th>
+                          <td>When visiting religious sites or attending traditional events, dress modestly and remove
+                            footwear if
+                            required. Always ask for permission before taking photographs of people, especially in rural
+                            areas.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-palette fa-icon"></i> Arts and Crafts</th>
+                          <td>India has a rich artistic heritage, including various forms of traditional arts and
+                            crafts. When
+                            purchasing local handicrafts, support local artisans and seek authentic products.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-leaf fa-icon"></i> Environment and Wildlife</th>
+                          <td>India is committed to environmental conservation and wildlife protection. Help preserve
+                            the natural
+                            beauty by avoiding littering, respecting wildlife habitats, and following eco-friendly
+                            practices.</td>
+                        </tr>
+                      </table>
+                      <h5>Prohibited Behaviors or Actions</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-times-circle fa-icon"></i> Prohibited Behaviors or Actions</th>
+                          <td>
+                            <ul>
+                              <li>Do not disrespect religious or cultural sites and practices.</li>
+                              <li>Refrain from public displays of affection, as it may be considered offensive in
+                                certain areas.</li>
+                              <li>Respect wildlife and do not engage in any activities that harm or disturb animals and
+                                their
+                                habitats.</li>
+                              <li>Avoid smoking in designated non-smoking areas.</li>
+                              <li>Do not use illegal substances or engage in any form of drug abuse.</li>
+                              <li>Follow local regulations and laws regarding alcohol consumption and avoid public
+                                intoxication.</li>
+                              <li>Respect private property and avoid trespassing on restricted areas.</li>
+                              <li>Avoid any behavior or actions that may be culturally insensitive or offensive.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </table>
+                      <strong>Remember:</strong>
+                      </br>
+                      </br>
+
+                      <p>It's important to be respectful of India's diverse culture, customs, and environment during
+                        your visit. Adhering to local traditions and guidelines will help ensure a positive and
+                        enriching experience in the country.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of new accordion -->
+            <!-- end of countries content-->
+
+            <script src="./js/app.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+              crossorigin="anonymous"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- start of footer -->
+  <footer class="text-center text-lg-start">
+    <!-- section: pending -->
+    <section class="d-flex justify-content-between p-4" style="background-color: #e21e2d">
+    </section>
+    <!-- section: pending -->
+
+    <!-- section: Links  -->
+    <section>
+      <div class="container text-center text-md-start mt-5">
+        <!-- grid row -->
+        <div class="row mt-3">
+          <!-- grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Exploredia</h6>
+            <hr class="mb-3 mt-0 d-inline-block mx-auto hr-foot" />
+            <p>
+              Explore countries worldwide with ease and access comprehensive travel information in one place
+            </p>
+          </div>
+          <!-- grid column -->
+
+          <!-- grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Quick links</h6>
+            <hr class="mb-3 mt-0 d-inline-block mx-auto hr-foot" />
+            <p>
+              <a href="../index.html" class="text-white">Home</a>
+            </p>
+            <p class="mt-2">
+              <a href="../translate.html" class="text-white">Translate</a>
+            </p>
+            <p class="mt-2">
+              <a href="../convert.html" class="text-white">Convert</a>
+            </p>
+            <p class="mt-2">
+              <a href="../countries.html" class="text-white">Countries</a>
+            </p>
+          </div>
+          <!-- grid column -->
+
+          <!-- grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- links -->
+            <h6 class="text-uppercase fw-bold" id="contact-us">Contact</h6>
+            <hr class="mb-3 mt-0 d-inline-block mx-auto hr-foot" />
+            <p class="mt-2"><i class="fas fa-home mr-3 icon-container"></i> 143 Calye, Taguig, Manila</p>
+            <p class="mt-2"><i class="fas fa-envelope mr-3 icon-container"></i> traveldesk@exploredia.com</p>
+            <p class="mt-2"><i class="fas fa-phone mr-3 icon-container"></i> 0914 314 1431</p>
+          </div>
+          <!-- grid column -->
+
+          <!-- grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- links -->
+            <h6 class="text-uppercase fw-bold">Socials</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto hr-foot" />
+            <p>
+            </p>
+
+            <!-- <div class="icon-container"> -->
+            <a href="https://www.facebook.com/" class="text-white  me-4">
+              <i class="fab fa-facebook-f  icon-container"></i>
+            </a>
+            <a href="https://www.twitter.com/" class="text-white me-4">
+              <i class="fab fa-twitter  icon-container"></i>
+            </a>
+            <a href="https://www.gmail.com/" class="text-white me-4">
+              <i class="fab fa-google  icon-container"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="text-white me-2">
+              <i class="fab fa-instagram icon-container"></i>
+            </a>
+            <!-- </div> -->
+          </div>
+          <!-- grid column -->
+        </div>
+        <!-- grid row -->
+      </div>
+    </section>
+    <!-- section: links  -->
+
+    <!-- copyright -->
+    <div class="text-center p-3 copy mb-4">
+      ©2023 Exploredia.
+      <a class="text-white" href="https://exploredia.com/">All rights reserved.</a>
+    </div>
+    <!-- end of copyright -->
+  </footer>
+  <!-- end of footer -->
+</body>
+
+</html>
