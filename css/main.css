@@ -728,6 +728,14 @@ footer {
     margin-top: -25px;
   }
 
+  .wrapper {
+    margin-top: -300px;
+  }
+
+  /* .text-lg-start {
+    margin-top: -300px;
+  } */
+
   
 } 
 
@@ -832,6 +840,7 @@ footer {
 /* currency converter */
 
 .converter {
+  margin-top: -30px;
   display: flex;
   align-items: center;
   justify-content: center;
