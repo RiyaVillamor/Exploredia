@@ -740,6 +740,7 @@ footer {
   border-radius: 30px;
 }
 
+
 .card-title {
   display: flex;
   align-items: center;
@@ -807,6 +808,7 @@ footer {
 .contact-us .submit:hover {
   background: var(--accent);
 }
+
 
 @media (max-width:765px) {
   .contact-us {
