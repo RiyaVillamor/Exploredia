@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exploredia</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/favicon-exploredia.png" type="image/x-icon" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="../css/main.css" />
+
+  <style>
+    body {
+      margin: 20px;
+    }
+
+    h5 {
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .fa-icon {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- start of navbar -->
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <div class="logo-container">
+        <img class="logo-mv" src="../assets/exploredia-navbar.png" alt="favicon-exploredia" width="200px">
+        <!-- <span class="colored-letter fw-bold fs-6">E</span><span class="colored-word fw-bold fs-6">xploredia</span> -->
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary me-5">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active ms-5 fw-bold" aria-current="page" href="../index.html">HOME</a>
+              <a class="nav-link ms-5 fw-bold" href="../translate.html">TRANSLATE</a>
+              <a class="nav-link ms-5 fw-bold" href="../convert.html">CONVERT</a>
+              <a class="nav-link ms-5 fw-bold" href="../countries.html">COUNTRIES</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="colored-letter fw-bold"
+                id="colored-brand">E</span><span class="colored-word fw-bold" id="colored-brand-2">xploredia</span>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item fw-semibold mt-3">
+                <a class="nav-link" href="../countries.html">COUNTRIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold mt-3" href="../about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold mt-3" href="#contact-us">CONTACT US</a>
+              </li>
+              <li class="nav-item dropdown mt-3">
+                <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  OTHER FEATURES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item hov-translate" href="../translate.html">TRANSLATE</a></li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item hov-convert" href="../convert.html">CONVERT</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="colored-letter fw-bold"
+            id="colored-brand">E</span><span class="colored-word fw-bold" id="colored-brand-2">xploredia</span>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold" aria-current="page" href="../index.html">HOME</a>
+          </li>
+          <li class="nav-item fw-semibold mt-3">
+            <a class="nav-link" href="../countries.html">COUNTRIES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold mt-3" href="../about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold mt-3" href="#contact-us">CONTACT US</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              OTHER FEATURES
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item hov-translate" href="../translate.html">TRANSLATE</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item hov-convert" href="../convert.html">CONVERT</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end of navbar -->
+  <br>
+  <br>
+  <br>
+  <!-- start of countries content -->
+  <!-- page Content -->
+
+  <div class="container-fluid mb-5 ">
+    <div class="col-12 col-md-12 col-sm-10 ms-4">
+      <div class="row mx-0">
+        <div class="col-11 col-md-11">
+          <div class="container mt-1">
+            <!--item row -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <img class="img-fluid" src="../assets/tourist-spot/18-beli.jpg" alt="">
+              </div>
+
+              <div class="col-md-5">
+                <h3 class="my-3">Belize <img src="https://flagcdn.com/w40/bz.png" width="40" alt="Belize">
+                </h3>
+
+                <p>Belize is home to the majestic Great Blue Hole, a UNESCO World Heritage Site.
+                  It boasts diverse wildlife, including jaguars and toucans, and offers ancient
+                  Mayan ruins for exploration.</p>
+                <h3 class="my-3">Facts</h3>
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Capital</th>
+                      <td>Belmopan</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Region</th>
+                      <td>Central America</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Population</th>
+                      <td>411,158</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Language</th>
+                      <td>English</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Currency</th>
+                      <td>Belize Dollar (BZD)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- end of item row -->
+              <!-- start of new accordion -->
+              <div class="accordion mt-5" id="accordion-id">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Visa Information
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordion-id">
+                    <div class="accordion-body">
+                      <h5>Belize Visa Information</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-info-circle fa-icon"></i> General Information</th>
+                        </tr>
+                        <tr>
+                          <td>Belize has specific visa requirements for travelers based on their nationality and the
+                            purpose of their visit. Visa regulations may vary depending on the duration and nature of
+                            your stay. It is important to verify the current visa requirements before planning your trip
+                            to Belize.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-plane-departure fa-icon"></i> Tourist Visa</th>
+                        </tr>
+                        <tr>
+                          <td>Citizens of certain countries may be eligible for visa-free entry into Belize for
+                            tourism purposes, typically for short stays. However, visa requirements may apply depending
+                            on your nationality. Check if your country is part of the visa waiver program or if you need
+                            to apply for a tourist visa.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-plane-departure fa-icon"></i> Visa Extension</th>
+                        </tr>
+                        <tr>
+                          <td>If you wish to extend your stay beyond the visa-free period, you may need to apply for
+                            a visa extension through the Belize Immigration Department.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-file-signature fa-icon"></i> Application Process</th>
+                        </tr>
+                        <tr>
+                          <td>The application process for a tourist visa or visa extension typically involves
+                            submitting the required documents and paying the necessary fees. The application procedures
+                            may differ, so it is advisable to check with the Belize embassy or consulate in your country
+                            for specific guidelines.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-money-bill-wave fa-icon"></i> Visa Fee</th>
+                        </tr>
+                        <tr>
+                          <td>Visa fees, if applicable, will vary based on the type of visa and your nationality.
+                            Confirm the current visa fees with the Belize embassy or consulate.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-calendar-check fa-icon"></i> Visa Validity and Expiration</th>
+                        </tr>
+                        <tr>
+                          <td>5. The validity and expiration of the visa will depend on the type of visa issued and the
+                            duration approved by the Belize Immigration Department.</td>
+                        </tr>
+                      </table>
+                      <strong>Note:</strong>
+                      </br>
+                      </br>
+
+                      <p>The visa requirements and application process for Belize may differ based on your nationality
+                        and the purpose of your visit. It is essential to verify the current visa regulations with the
+                        Belize embassy or official government sources before planning your trip to Belize.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Recommended Travel Itinerary and Cost Estimation
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion-id">
+                    <div class="accordion-body">
+
+                      <h5>Route A: Belize City and Caye Caulker Escape</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i> Attractions</th>
+                          <td>Belize City, Caye Caulker</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i> Travel Duration</th>
+                          <td>Approximately 5-7 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i> Transportation</th>
+                          <td>Flights to Belize City, water taxis to Caye Caulker, and local transportation</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i> Estimated Travel Costs</th>
+                          <td>BZD 2,500 - 4,000</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i> Days & Nights</th>
+                          <td>5-7 days, including 2-3 nights in Belize City and 2-4 nights in Caye Caulker</td>
+                        </tr>
+                      </table>
+
+                      <h5>Route B: San Ignacio Jungle Adventure</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i> Attractions</th>
+                          <td>San Ignacio, Xunantunich Ruins, Cahal Pech, Actun Tunichil Muknal (ATM) Cave</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i> Travel Duration</th>
+                          <td>Approximately 4-6 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i> Transportation</th>
+                          <td>Domestic flights or buses to San Ignacio and local transportation</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i> Estimated Travel Costs</th>
+                          <td>BZD 3,000 - 5,000</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i> Days & Nights</th>
+                          <td>4-6 days, including 2-4 nights in San Ignacio</td>
+                        </tr>
+                      </table>
+
+                      <h5>Route C: Placencia Beach Getaway</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i> Attractions</th>
+                          <td>Placencia, Laughing Bird Caye National Park, Silk Cayes, Snorkeling and Diving</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i> Travel Duration</th>
+                          <td>Approximately 4-6 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i> Transportation</th>
+                          <td>Domestic flights or buses to Placencia and local transportation</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i> Estimated Travel Costs</th>
+                          <td>BZD 3,500 - 5,500</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i> Days & Nights</th>
+                          <td>4-6 days, including 2-4 nights in Placencia</td>
+                        </tr>
+                      </table>
+
+                      <h5>Route D: Cayo District Nature and Culture Exploration</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i> Attractions</th>
+                          <td>San Ignacio, Barton Creek Cave, Rio on Pools, Caracol Maya Ruins, Belize Zoo</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i> Travel Duration</th>
+                          <td>Approximately 5-7 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i> Transportation</th>
+                          <td>Domestic flights or buses to San Ignacio and local transportation</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i> Estimated Travel Costs</th>
+                          <td>BZD 3,500 - 5,500</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i> Days & Nights</th>
+                          <td>5-7 days, including 3-5 nights in San Ignacio</td>
+                        </tr>
+                      </table>
+
+                      <strong>Note:</strong>
+                      </br>
+                      </br>
+
+                      <p>The estimated travel costs are provided in Belizean Dollars (BZD) and are based on mid-2021
+                        data. These figures are rough estimates and can vary based on various factors such as the time
+                        of travel, accommodation choices, dining preferences, and activities undertaken during the trip.
+                        It's always advisable to research and plan your trip according to your budget and preferences.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      Tourist Etiquette - Traditions and Prohibited Actions
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion-id">
+                    <div class="accordion-body">
+                      <h5>Guide to Belize: Facts and Information</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-globe-americas fa-icon"></i> Geography</th>
+                          <td>Belize is a small country located in Central America. It is bordered by Mexico to the
+                            north, Guatemala to
+                            the west and south, and the Caribbean Sea to the east. Belize is known for its beautiful
+                            beaches, lush
+                            rainforests, and diverse marine life.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-city fa-icon"></i> Capital City</th>
+                          <td>Belmopan is the capital city of Belize. Although smaller than other cities, it serves as
+                            the country's
+                            political and administrative center.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-language fa-icon"></i> Language</th>
+                          <td>English is the official language of Belize, making it the only English-speaking country in
+                            Central
+                            America. Additionally, Spanish is widely spoken throughout the country.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-money-bill-wave fa-icon"></i> Currency</th>
+                          <td>The currency used in Belize is the Belize Dollar (BZD). US Dollars are also widely
+                            accepted in most
+                            tourist areas.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-cloud-sun fa-icon"></i> Climate</th>
+                          <td>Belize has a tropical climate with two main seasons: the wet season (June to November) and
+                            the dry
+                            season (December to May). The country is prone to hurricanes during the wet season, so
+                            travelers should
+                            check weather conditions before visiting.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-paw fa-icon"></i> Wildlife</th>
+                          <td>Belize is rich in biodiversity, and its ecosystems support a variety of wildlife. The
+                            country is home to
+                            diverse species, including jaguars, howler monkeys, colorful birds, and marine creatures
+                            along its
+                            extensive coral reef.</td>
+                        </tr>
+                      </table>
+                      <h5>Cultural Traditions and Prohibited Behaviors</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-users fa-icon"></i> Diverse Culture</th>
+                          <td>Belize is a melting pot of various cultures, including Maya, Garifuna, Mestizo, and
+                            Creole. It is
+                            important to respect and appreciate the traditions, customs, and history of each community.
+                          </td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-utensils fa-icon"></i> Cuisine</th>
+                          <td>Belizean cuisine is influenced by its multicultural population and abundant natural
+                            resources. When
+                            invited to a meal, be open to trying local dishes like rice and beans, fry jacks, and fresh
+                            seafood.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-futbol fa-icon"></i> Festivals and Celebrations</th>
+                          <td>Belizeans celebrate various festivals, such as the September Celebrations and Garifuna
+                            Settlement Day,
+                            which showcase the country's history, music, dance, and traditional customs.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-umbrella-beach fa-icon"></i> Coastal Lifestyle</th>
+                          <td>As a coastal country, beach culture is an integral part of Belizean life. Respect marine
+                            habitats and
+                            coral reefs while snorkeling or diving, and follow responsible tourism practices.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-palette fa-icon"></i> Arts and Crafts</th>
+                          <td>Belize has a vibrant arts scene, including traditional crafts like intricate basketry and
+                            Maya textiles.
+                            Support local artisans and purchase authentic handmade products.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-leaf fa-icon"></i> Conservation and Environment</th>
+                          <td>Belize places a strong emphasis on environmental conservation. Help protect the country's
+                            natural beauty
+                            by avoiding littering, using eco-friendly products, and supporting sustainable tourism
+                            initiatives.</td>
+                        </tr>
+                      </table>
+                      <h5>Prohibited Behaviors or Actions</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-times-circle fa-icon"></i> Prohibited Behaviors or Actions</th>
+                          <td>
+                            <ul>
+                              <li>Refrain from touching or disturbing wildlife and marine life, including coral reefs.
+                              </li>
+                              <li>Do not litter and dispose of trash responsibly. Respect the environment and use
+                                recycling facilities
+                                when available.</li>
+                              <li>Follow local regulations and guidelines while exploring national parks and protected
+                                areas.</li>
+                              <li>Refrain from purchasing products made from endangered or protected species.</li>
+                              <li>Respect the privacy and traditions of indigenous communities and seek permission
+                                before taking
+                                photographs.</li>
+                              <li>Adhere to local laws and customs, and avoid engaging in any illegal activities.</li>
+                              <li>Do not consume or possess illegal drugs. Belize has strict laws regarding drug
+                                offenses.</li>
+                              <li>Respect private property and avoid trespassing on restricted areas.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </table>
+                      <strong>Remember:</strong>
+                      </br>
+                      </br>
+
+                      <p>Enjoy your time in Belize, immerse yourself in its rich culture, and help preserve its natural
+                        wonders for future generations by being a responsible and respectful traveler.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of new accordion -->
+            <!-- end of countries content-->
+
+            <script src="./js/app.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+              crossorigin="anonymous"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- start of footer -->
+  <footer class="text-center text-lg-start">
+    <!-- section: pending -->
+    <section class="d-flex justify-content-between p-4" style="background-color: #e21e2d">
+    </section>
+    <!-- section: pending -->
+
+    <!-- section: Links  -->
+    <section>
+      <div class="container text-center text-md-start mt-5">
+        <!-- grid row -->
+        <div class="row mt-3">
+          <!-- grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Exploredia</h6>
+            <hr class="mb-3 mt-0 d-inline-block mx-auto hr-foot" />
+            <p>
+              Explore countries worldwide with ease and access comprehensive travel information in one place
+            </p>
+          </div>
+          <!-- grid column -->
+
+          <!-- grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Quick links</h6>
+            <hr class="mb-3 mt-0 d-inline-block mx-auto hr-foot" />
+            <p>
+              <a href="../index.html" class="text-white">Home</a>
+            </p>
+            <p class="mt-2">
+              <a href="../translate.html" class="text-white">Translate</a>
+            </p>
+            <p class="mt-2">
+              <a href="../convert.html" class="text-white">Convert</a>
+            </p>
+            <p class="mt-2">
+              <a href="../countries.html" class="text-white">Countries</a>
+            </p>
+          </div>
+          <!-- grid column -->
+
+          <!-- grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- links -->
+            <h6 class="text-uppercase fw-bold" id="contact-us">Contact</h6>
+            <hr class="mb-3 mt-0 d-inline-block mx-auto hr-foot" />
+            <p class="mt-2"><i class="fas fa-home mr-3 icon-container"></i> 143 Calye, Taguig, Manila</p>
+            <p class="mt-2"><i class="fas fa-envelope mr-3 icon-container"></i> traveldesk@exploredia.com</p>
+            <p class="mt-2"><i class="fas fa-phone mr-3 icon-container"></i> 0914 314 1431</p>
+          </div>
+          <!-- grid column -->
+
+          <!-- grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- links -->
+            <h6 class="text-uppercase fw-bold">Socials</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto hr-foot" />
+            <p>
+            </p>
+
+            <!-- <div class="icon-container"> -->
+            <a href="https://www.facebook.com/" class="text-white  me-4">
+              <i class="fab fa-facebook-f  icon-container"></i>
+            </a>
+            <a href="https://www.twitter.com/" class="text-white me-4">
+              <i class="fab fa-twitter  icon-container"></i>
+            </a>
+            <a href="https://www.gmail.com/" class="text-white me-4">
+              <i class="fab fa-google  icon-container"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="text-white me-2">
+              <i class="fab fa-instagram icon-container"></i>
+            </a>
+            <!-- </div> -->
+          </div>
+          <!-- grid column -->
+        </div>
+        <!-- grid row -->
+      </div>
+    </section>
+    <!-- section: links  -->
+
+    <!-- copyright -->
+    <div class="text-center p-3 copy mb-4">
+      ©2023 Exploredia.
+      <a class="text-white" href="https://exploredia.com/">All rights reserved.</a>
+    </div>
+    <!-- end of copyright -->
+  </footer>
+  <!-- end of footer -->
+</body>
+
+</html>

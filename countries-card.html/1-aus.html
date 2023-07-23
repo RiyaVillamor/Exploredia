@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exploredia</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/favicon-exploredia.png" type="image/x-icon" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="../css/main.css" />
+
+  <style>
+    body {
+      margin: 20px;
+    }
+
+    h5 {
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .fa-icon {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- start of navbar -->
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <div class="logo-container">
+        <img class="logo-mv" src="../assets/exploredia-navbar.png" alt="favicon-exploredia" width="200px">
+        <!-- <span class="colored-letter fw-bold fs-6">E</span><span class="colored-word fw-bold fs-6">xploredia</span> -->
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary me-5">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active ms-5 fw-bold" aria-current="page" href="../index.html">HOME</a>
+              <a class="nav-link ms-5 fw-bold" href="../translate.html">TRANSLATE</a>
+              <a class="nav-link ms-5 fw-bold" href="../convert.html">CONVERT</a>
+              <a class="nav-link ms-5 fw-bold" href="../countries.html">COUNTRIES</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="colored-letter fw-bold"
+                id="colored-brand">E</span><span class="colored-word fw-bold" id="colored-brand-2">xploredia</span>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item fw-semibold mt-3">
+                <a class="nav-link" href="../countries.html">COUNTRIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold mt-3" href="../about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold mt-3" href="#contact-us">CONTACT US</a>
+              </li>
+              <li class="nav-item dropdown mt-3">
+                <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  OTHER FEATURES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item hov-translate" href="../translate.html">TRANSLATE</a></li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item hov-convert" href="../convert.html">CONVERT</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="colored-letter fw-bold"
+            id="colored-brand">E</span><span class="colored-word fw-bold" id="colored-brand-2">xploredia</span>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold" aria-current="page" href="../index.html">HOME</a>
+          </li>
+          <li class="nav-item fw-semibold mt-3">
+            <a class="nav-link" href="../countries.html">COUNTRIES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold mt-3" href="../about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold mt-3" href="#contact-us">CONTACT US</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              OTHER FEATURES
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item hov-translate" href="../translate.html">TRANSLATE</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item hov-convert" href="../convert.html">CONVERT</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end of navbar -->
+  <br>
+  <br>
+  <br>
+  <!-- start of countries content -->
+  <!-- page Content -->
+
+  <div class="container-fluid mb-5 ">
+    <div class="col-12 col-md-12 col-sm-10 ms-4">
+      <div class="row mx-0">
+        <div class="col-11 col-md-11">
+          <div class="container mt-1">
+            <!--item row -->
+            <div class="row">
+
+              <div class="col-md-7">
+                <img class="img-fluid" src="../assets/tourist-spot/9-austra.jpg" alt="">
+              </div>
+
+              <div class="col-md-5">
+                <h3 class="my-3">Australia <img src="https://flagcdn.com/w40/au.png" width="40" alt="Australia">
+                </h3>
+
+                <p>Australia is the world's largest island, the smallest continent,
+                  and has the longest fence (Dingo Fence). It houses the unique monotreme,
+                  the platypus, and has diverse landscapes from deserts to rainforests.</p>
+                <h3 class="my-3">Facts</h3>
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Capital</th>
+                      <td>Canberra</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Region</th>
+                      <td>Oceania</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Population</th>
+                      <td>26,439,111</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Language</th>
+                      <td>English</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Currency</th>
+                      <td>Australian Dollar (AUD)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- end of item row -->
+              <!-- start of new accordion -->
+              <div class="accordion mt-5" id="accordion-id">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Visa Information
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordion-id">
+                    <div class="accordion-body">
+                      <h5>Australia Visa Information</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-info-circle fa-icon"></i> General Information</th>
+                        </tr>
+                        <tr>
+                          <td>Australia offers various visa options for travelers based on their nationality and the
+                            purpose of their visit. The visa requirements may differ depending on the duration and
+                            nature of your stay. It is important to verify the current visa regulations before planning
+                            your trip.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-plane-departure fa-icon"></i> Tourist Visa</th>
+                        </tr>
+                        <tr>
+                          <td>1. Citizens of certain countries may be eligible for visa-free entry into Australia for
+                            tourism purposes, usually for stays up to 90 days. Check if your country is part of the visa
+                            waiver program or if you need to apply for a tourist visa.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-plane-departure fa-icon"></i> Visa Extension</th>
+                        </tr>
+                        <tr>
+                          <td>2. If you wish to extend your stay beyond the visa-free period, you may need to apply for
+                            a visa extension with the Department of Home Affairs in Australia.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-file-signature fa-icon"></i> Application Process</th>
+                        </tr>
+                        <tr>
+                          <td>3. The application process for a tourist visa or visa extension typically involves
+                            submitting the required documents and paying the necessary fees. Application procedures may
+                            vary, so check with the Australian embassy or consulate in your country for specific
+                            guidelines.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-money-bill-wave fa-icon"></i> Visa Fee</th>
+                        </tr>
+                        <tr>
+                          <td>4. Visa fees, if applicable, will vary based on the type of visa and nationality. Check
+                            with the Australian embassy or consulate for the current visa fees.</td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-calendar-check fa-icon"></i> Visa Validity and Expiration</th>
+                        </tr>
+                        <tr>
+                          <td>5. The validity and expiration of the visa will depend on the type of visa granted and the
+                            duration approved by the Department of Home Affairs in Australia.</td>
+                        </tr>
+                      </table>
+                      <strong>Note:</strong>
+                      </br>
+                      </br>
+
+                      <p>The visa requirements and application process for Australia may vary based on your nationality
+                        and the purpose of your visit. It is essential to verify the current visa regulations with the
+                        Australian embassy or official government sources before planning your trip to Australia.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Recommended Travel Itinerary and Cost Estimation
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion-id">
+                    <div class="accordion-body">
+
+                      <h5>Route A: Sydney to the Great Barrier Reef</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i>Attractions</th>
+                          <td>Sydney, Brisbane, Cairns, Great Barrier Reef</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i>Travel Duration</th>
+                          <td>Approximately 10-14 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i>Transportation</th>
+                          <td>Flights between cities, trains, and local transportation</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i>Estimated Travel Costs</th>
+                          <td>AUD 4,000 - 6,000</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i>Days & Nights</th>
+                          <td>10-14 days, including 2-3 nights in Sydney, 2-3 nights in Brisbane, 3-4 nights in Cairns,
+                            and 2-3 nights in
+                            the Great Barrier Reef</td>
+                        </tr>
+                      </table>
+                      <h5>Route B: Melbourne to the Great Ocean Road</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i>Attractions</th>
+                          <td>Melbourne, Great Ocean Road, Twelve Apostles</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i>Travel Duration</th>
+                          <td>Approximately 5-7 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i>Transportation</th>
+                          <td>Car rental or organized tours</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i>Estimated Travel Costs</th>
+                          <td>AUD 2,000 - 3,000</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i>Days & Nights</th>
+                          <td>5-7 days, including 2-3 nights in Melbourne and 2-4 days exploring the Great Ocean Road
+                          </td>
+                        </tr>
+                      </table>
+                      <h5>Route C: Brisbane to the Whitsundays</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i>Attractions</th>
+                          <td>Brisbane, Airlie Beach, Whitsunday Islands</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i>Travel Duration</th>
+                          <td>Approximately 7-10 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i>Transportation</th>
+                          <td>Flights or buses between cities, ferries or boat tours to the Whitsunday Islands</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i>Estimated Travel Costs</th>
+                          <td>AUD 3,000 - 5,000</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i>Days & Nights</th>
+                          <td>7-10 days, including 2-3 nights in Brisbane, 2-3 nights in Airlie Beach, and 3-4 nights in
+                            the Whitsunday
+                            Islands</td>
+                        </tr>
+                      </table>
+                      <h5>Route D: Perth to Margaret River</h5>
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-map-marked-alt fa-icon"></i>Attractions</th>
+                          <td>Perth, Fremantle, Margaret River</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-clock fa-icon"></i>Travel Duration</th>
+                          <td>Approximately 5-7 days</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-bus fa-icon"></i>Transportation</th>
+                          <td>Car rental or organized tours</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-dollar-sign fa-icon"></i>Estimated Travel Costs</th>
+                          <td>AUD 2,000 - 4,000</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-calendar fa-icon"></i>Days & Nights</th>
+                          <td>5-7 days, including 2-3 nights in Perth, 1-2 nights in Fremantle, and 2-3 nights in
+                            Margaret River</td>
+                        </tr>
+                      </table>
+                      <strong>Note:</strong>
+                      </br>
+                      </br>
+
+                      <p>These figures are rough estimates and can vary based on various factors such as the time of
+                        travel,
+                        accommodation choices, dining
+                        preferences, and activities undertaken during the trip. It's always advisable to research and
+                        plan your trip
+                        according to your budget and preferences.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      Tourist Etiquette - Traditions and Prohibited Actions
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion-id">
+                    <div class="accordion-body">
+                      <h5>Guide to Australia: Facts and Information</h5>
+
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-globe-americas fa-icon"></i> Geography</th>
+                          <td>Australia is the world's sixth-largest country by total area, spanning three time zones.
+                            It is located in the Southern Hemisphere and is surrounded by the Indian and Pacific Oceans.
+                          </td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-city fa-icon"></i> Capital City</th>
+                          <td>Canberra is the capital of Australia, known for its planned layout, iconic landmarks like
+                            Parliament House, and the Australian War Memorial.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-language fa-icon"></i> Language</th>
+                          <td>English is the official language of Australia, widely spoken throughout the country.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-money-bill-wave fa-icon"></i> Currency</th>
+                          <td>The currency in Australia is the Australian Dollar (AUD). Credit cards are widely
+                            accepted, and ATMs are easily accessible.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-cloud-sun fa-icon"></i> Climate</th>
+                          <td>Australia experiences diverse climates due to its size. The northern regions have a
+                            tropical climate, while the southern regions have a temperate climate. The country's seasons
+                            are the opposite of those in the Northern Hemisphere.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-paw fa-icon"></i> Wildlife</th>
+                          <td>Australia is renowned for its unique wildlife, including kangaroos, koalas, wombats, and
+                            various species of birds and marine life. It is essential to respect and protect the native
+                            fauna and follow any guidelines or regulations when encountering wildlife.</td>
+                        </tr>
+                      </table>
+
+                      <h5>Cultural Traditions and Prohibited Behaviors</h5>
+
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-users fa-icon"></i> Indigenous Culture</th>
+                          <td>Australia has a rich Aboriginal and Torres Strait Islander heritage. It is important to
+                            respect and appreciate their culture and land. Avoid touching or entering sacred sites
+                            without permission and adhere to any cultural protocols when interacting with Indigenous
+                            communities.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-utensils fa-icon"></i> Barbecue Culture</th>
+                          <td>Australians enjoy outdoor barbecues (BBQs) and social gatherings. If invited to a BBQ, it
+                            is customary to bring a small gift or contribute to the meal, such as a salad or drinks.
+                            Avoid arriving empty-handed or being overly critical of food choices.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-futbol fa-icon"></i> Sporting Events</th>
+                          <td>Australians are passionate about sports, particularly cricket, Australian Rules Football
+                            (AFL), and rugby. When attending sporting events, refrain from engaging in disruptive or
+                            disrespectful behavior and follow the rules and etiquette specific to each sport.</td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-umbrella-beach fa-icon"></i> Beach Culture</th>
+                          <td>Australia has stunning beaches, and beach culture is an integral part of Australian life.
+                            Observe beach safety guidelines, swim between the flags at patrolled beaches, and respect
+                            local customs and regulations, such as nudity restrictions and alcohol consumption rules.
+                          </td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-palette fa-icon"></i> Indigenous Art</th>
+                          <td>Australia has a thriving art scene, including Indigenous art that reflects the unique
+                            culture and stories of Aboriginal and Torres Strait Islander peoples. When purchasing
+                            Indigenous art, ensure you buy from reputable sources and respect copyright restrictions.
+                          </td>
+                        </tr>
+                        <tr>
+                          <th><i class="fas fa-leaf fa-icon"></i> Conservation and Environment</th>
+                          <td>Australians have a strong commitment to preserving the environment. Follow proper waste
+                            disposal practices, respect national parks and protected areas, and adhere to any
+                            restrictions or regulations in place to safeguard the natural beauty of Australia.</td>
+                        </tr>
+                      </table>
+
+                      <h5>Prohibited Behaviors or Actions</h5>
+
+                      <table>
+                        <tr>
+                          <th><i class="fas fa-times-circle fa-icon"></i> Prohibited Behaviors or Actions</th>
+                          <td>
+                            <ul>
+                              <li>Avoid littering and dispose of rubbish appropriately.</li>
+                              <li>Do not smoke in designated non-smoking areas.</li>
+                              <li>Respect wildlife and do not feed or disturb animals.</li>
+                              <li>Do not engage in discriminatory or offensive behavior based on race, gender, religion,
+                                or sexuality.</li>
+                              <li>Follow local alcohol consumption laws and drink responsibly.</li>
+                              <li>Observe and adhere to any signage or regulations in national parks and protected
+                                areas.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <strong>Remember:</strong>
+                      </br>
+                      </br>
+                      <p>These are general guidelines, and specific cultural practices and regulations may
+                        vary across regions in Australia. It is always important to be respectful, observe local
+                        customs, and follow any instructions or guidelines provided by authorities or local communities
+                        during your visit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of new accordion -->
+            <!-- end of countries content-->
+
+            <script src="./js/app.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+              crossorigin="anonymous"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- start of footer -->
+  <footer class="text-center text-lg-start">
+    <!-- section: pending -->
+    <section class="d-flex justify-content-between p-4" style="background-color: #e21e2d">
+    </section>
+    <!-- section: pending -->
+
+    <!-- section: Links  -->
+    <section>
+      <div class="container text-center text-md-start mt-5">
+        <!-- grid row -->
+        <div class="row mt-3">
+          <!-- grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Exploredia</h6>
+            <hr class="mb-3 mt-0 d-inline-block mx-auto hr-foot" />
+            <p>
+              Explore countries worldwide with ease and access comprehensive travel information in one place
+            </p>
+          </div>
+          <!-- grid column -->
+
+          <!-- grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Quick links</h6>
+            <hr class="mb-3 mt-0 d-inline-block mx-auto hr-foot" />
+            <p>
+              <a href="../index.html" class="text-white">Home</a>
+            </p>
+            <p class="mt-2">
+              <a href="../translate.html" class="text-white">Translate</a>
+            </p>
+            <p class="mt-2">
+              <a href="../convert.html" class="text-white">Convert</a>
+            </p>
+            <p class="mt-2">
+              <a href="../countries.html" class="text-white">Countries</a>
+            </p>
+          </div>
+          <!-- grid column -->
+
+          <!-- grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- links -->
+            <h6 class="text-uppercase fw-bold" id="contact-us">Contact</h6>
+            <hr class="mb-3 mt-0 d-inline-block mx-auto hr-foot" />
+            <p class="mt-2"><i class="fas fa-home mr-3 icon-container"></i> 143 Calye, Taguig, Manila</p>
+            <p class="mt-2"><i class="fas fa-envelope mr-3 icon-container"></i> traveldesk@exploredia.com</p>
+            <p class="mt-2"><i class="fas fa-phone mr-3 icon-container"></i> 0914 314 1431</p>
+          </div>
+          <!-- grid column -->
+
+          <!-- grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- links -->
+            <h6 class="text-uppercase fw-bold">Socials</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto hr-foot" />
+            <p>
+            </p>
+
+            <!-- <div class="icon-container"> -->
+            <a href="https://www.facebook.com/" class="text-white  me-4">
+              <i class="fab fa-facebook-f  icon-container"></i>
+            </a>
+            <a href="https://www.twitter.com/" class="text-white me-4">
+              <i class="fab fa-twitter  icon-container"></i>
+            </a>
+            <a href="https://www.gmail.com/" class="text-white me-4">
+              <i class="fab fa-google  icon-container"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="text-white me-2">
+              <i class="fab fa-instagram icon-container"></i>
+            </a>
+            <!-- </div> -->
+          </div>
+          <!-- grid column -->
+        </div>
+        <!-- grid row -->
+      </div>
+    </section>
+    <!-- section: links  -->
+
+    <!-- copyright -->
+    <div class="text-center p-3 copy mb-4">
+      ©2023 Exploredia.
+      <a class="text-white" href="https://exploredia.com/">All rights reserved.</a>
+    </div>
+    <!-- end of copyright -->
+  </footer>
+  <!-- end of footer -->
+</body>
+
+</html>
