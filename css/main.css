@@ -571,12 +571,12 @@ footer {
   margin-top: 5px;
 }
 
-.home .content p {
+/* .home .content p {
   background-color: var(--primary-500);
-}
+} */
 
 
-@keyframes country {
+/* @keyframes country {
   0% {
     background-image: url('../assets/tourist-spot/84-jap.jpg');
   }
@@ -610,7 +610,7 @@ footer {
   100% {
     background-image: url('../assets/tourist-spot/124-net.jpg');
   }
-}
+} */
 
 .home {
   width: 100%;
